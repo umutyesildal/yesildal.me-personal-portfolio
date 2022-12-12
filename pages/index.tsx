@@ -82,7 +82,6 @@ export default function Index({
           </div>
         </div>
       </main>
-
       <CommonFooter />
       <CookieConsent {...cookie} />
       <div
