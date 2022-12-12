@@ -1,0 +1,37 @@
+{
+  "name": "metavest",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.15",
+    "@mui/material": "^5.10.17",
+    "cookies-next": "^2.0.4",
+    "express-useragent": "^1.0.15",
+    "gsap": "^3.10.2",
+    "html-react-parser": "^1.4.12",
+    "is-mobile": "^3.1.1",
+    "js-cookie": "^3.0.1",
+    "next": "^12.2.5",
+    "node-html-parser": "^5.3.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-gtm-module": "^2.0.11",
+    "react-useinterval": "^1.0.2",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.2",
+    "typescript": "^4.7.4"
+  }
+}
