@@ -1,8 +1,8 @@
-import Link from "next/link";
 import { useEffect, useState, useRef} from "react";
 import { useRouter } from "next/router";
 import { downloadApp } from "../utils/pageUtils";
 import LanguageLink from "./shared/LanguageLink";
+import { Link } from "react-scroll";
 
 export default function Navigation({
   isSticky = false,
@@ -82,30 +82,31 @@ export default function Navigation({
         </a>
      
         <ul className="menu" >
+          
           <li className="secondary">
-            <LanguageLink href={'security'}>
-              home
-            </LanguageLink>
+          <Link activeClass="active" smooth spy to="home">
+                home
+              </Link>
           </li>
           <li className="secondary">
-            <LanguageLink href={'security'}>
-            expertise
-            </LanguageLink>
+          <Link activeClass="active" smooth spy to="expertise">
+                expertise
+            </Link>
           </li>
           <li className="secondary">
-            <LanguageLink href={'security'}>
-              work
-            </LanguageLink>
+          <Link activeClass="active" smooth spy to="work">
+                work
+            </Link>
           </li>
           <li className="secondary">
-            <LanguageLink href={'security'}>
-              experience
-            </LanguageLink>
+          <Link activeClass="active" smooth spy to="experience">
+                experience
+            </Link>
           </li>
           <li className="secondary">
-            <LanguageLink href={'security'}>
-              contact
-            </LanguageLink>
+          <Link activeClass="active" smooth spy to="contact">
+                contact
+            </Link>
           </li>
         </ul>
         <div className={`mobile-menu ${state.isActive ? "opened" : "closed"}`}>
@@ -182,7 +183,7 @@ export default function Navigation({
         }
 
         nav.sticky.dim ul li.secondary a, nav.sticky.dim ul li.primary p {
-          color: var(--title-color);
+          color: #218c74;
         }
 
         nav .mobile-menu ul li p {

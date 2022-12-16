@@ -19,7 +19,7 @@ export default function Work() {
   const q = gsap.utils.selector(el);
   const tl = useRef();
   let windowWidth = 1512;
-  let windowHeight = 900;
+  let windowHeight = 1200;
   let media = null;
   let listElements = null;
   let contentTextArea = null;
@@ -30,9 +30,9 @@ export default function Work() {
   let images = [];
 
   if (typeof window !== "undefined") {
-    for (let i = 0; i <= 191; i++) {
+    for (let i = 0; i <= 5; i++) {
       let _image = new Image();
-      _image.src = `https://mvst-public.s3.eu-central-1.amazonaws.com/landing/${i}.jpg`;
+      _image.src = `${i}.png`;
       _image.alt = `section 1 image-${i}`;
       images.push(_image);
     }
@@ -60,28 +60,9 @@ export default function Work() {
         onUpdate: (self) => {
           let currentPosition = self.progress.toFixed(2);
           scrollPos.next = Math.min(
-            Math.max(0, Math.floor(currentPosition * 191)),
-            191
+            Math.max(0, Math.floor(currentPosition * 5)),
+            5
           );
-
-          if (!interval) {
-            interval = setInterval(() => {
-              if (scrollPos.next != scrollPos.current) {
-                if (scrollPos.next > scrollPos.current) {
-                  scrollPos.current += 1;
-                } else {
-                  scrollPos.current -= 1;
-                }
-                media.querySelector("img")?.remove();
-                if (images[scrollPos.current]) {
-                  media?.appendChild(images[scrollPos.current]);
-                }
-              } else {
-                clearInterval(interval);
-                interval = null;
-              }
-            }, 20);
-          }
           if (windowWidth > 992) {
             let contentTextAreaTranslate = currentPosition * 200;
             contentTextAreaTranslate > 50 && (contentTextAreaTranslate = 50);
@@ -91,16 +72,24 @@ export default function Work() {
           activeListItem && activeListItem.classList.remove("active");
           if (currentPosition > 0.8) {
             listElements[4].classList.add("active");
+            media?.appendChild(images[4]);
+
           } else if (currentPosition > 0.6) {
             listElements[3].classList.add("active");
+            media?.appendChild(images[3]);
           } 
           else if (currentPosition > 0.4) {
             listElements[2].classList.add("active");
+            media?.appendChild(images[2]);
+
           }  else if (currentPosition > 0.2) {
             listElements[1].classList.add("active");
+            media?.appendChild(images[1]);
           } 
           else {
             listElements[0].classList.add("active");
+            media?.appendChild(images[0]);
+
           }
         },
       },
@@ -141,6 +130,7 @@ export default function Work() {
           padding-bottom: 0;
           padding-left: 10.317vw;
           padding-right: 9.193vw;
+          justify-content: space-between;
         }
 
         section .media {

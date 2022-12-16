@@ -16,7 +16,7 @@ function JoinSection(props:JoinSectionProps){
         </a>
       </div>
       <div className='separator'></div>
-      <img src="/img/image-preview.png" alt="Join Metavest" />
+      <img src="/img/image-preview.png"/>
     </div>
     <style jsx>{`
       .container {

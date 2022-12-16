@@ -24,7 +24,9 @@ export default function Experience() {
           position: relative;
           display: flex;
           flex-direction: row;
-          padding: 0 12.103vw 2vw 10.317vw;
+          padding: 4vw 5.103vw 2vw 10.317vw;
+          background-color: #c1f3e7;
+
         }
 
         section .media {

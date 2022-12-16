@@ -25,17 +25,16 @@ export default function Expertise() {
 
           <ul>
             <li className="animation-element">
-              <img src="/icon_1.svg" alt="Find the best opportunities icon"/>
+              <img src="/icon/home.png"/>
               <span>{texts.item1}</span>
             </li>
             <li className="animation-element">
-              <img src="/icon_2.svg" alt="Boost your rewards icon" />
+              <img src="/icon/user.png"/>
               <span>{texts.item2}</span>
             </li>
             <li className="animation-element">
               <img
-                src="/icon_3.svg"
-                alt="Be a part of Metavest DeFi community icon"
+                src="/icon/sack-dollar.png"
               />
               <span>{texts.item3}</span>
             </li>
@@ -47,7 +46,9 @@ export default function Expertise() {
           position: relative;
           display: flex;
           flex-direction: row;
-          padding: 0 12.103vw 2vw 10.317vw;
+          padding: 4vw 5.103vw 2vw 10.317vw;
+          z-index: 10;
+
         }
 
         section .media {
@@ -76,7 +77,6 @@ export default function Expertise() {
           font-size: 3.43391vw;
           line-height: 122%;
           color: #234d63;
-          width: 29.49735vw;
           margin-bottom: 2.513vw;
           animation-delay: 0s;
         }
@@ -91,7 +91,6 @@ export default function Expertise() {
           font-size: 1.5873vw;
           line-height: 140%;
           color: #234d63;
-          width: 29.2328vw;
           margin-bottom: 2.513vw;
           animation-delay: 0.3s;
         }
@@ -138,7 +137,6 @@ export default function Expertise() {
 
         section .content ul li img {
           width: 1.917vw;
-          height: 1.322vw;
           margin-bottom: 1.851vw;
         }
 

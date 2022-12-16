@@ -27,7 +27,6 @@ const page = ({name, content, seoTitle, seoDescription, style, head, pageSpesifi
             <Head>
                 <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KMD99G5"></script>
                 <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-                <title>Metavest | {seoTitle}</title>
                 <meta
                     name="description"
                     content={seoDescription}

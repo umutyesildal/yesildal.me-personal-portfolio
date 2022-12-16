@@ -3,10 +3,9 @@ import {useState, useEffect, useRef} from 'react';
 
 export default function Home() {
   const [texts] = useState({
-    title: "Name Surname",
+    title: "Umut Yunus Yeşildal",
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
-    actionText: "Link to <strong>somewhere</strong>",
-    actionButtonText: "Link",
+    actionText: "See more <strong>socials</strong>",
   });
 
   /// TODO: Add your photos to here
@@ -24,9 +23,14 @@ export default function Home() {
             <span dangerouslySetInnerHTML={{ __html: texts.actionText }}></span>
             <a
               className="primary-button"
-              href="https://metave.st/download"
-              dangerouslySetInnerHTML={{ __html: texts.actionButtonText }}
-            ></a>
+              href="https://metave.st/download">
+                Github
+              </a>
+            <a
+              className="primary-button"
+              href="https://metave.st/download">
+                Linkedin
+              </a>
           </div>
 
         </div>
@@ -44,11 +48,10 @@ export default function Home() {
           padding: 12.235vw 12.103vw 10.978vw;
           background: linear-gradient(
             149.15deg,
-            #1a5570 28.8%,
-            #265f7f 45.29%,
-            #0f2943 82.96%
+            #2f3640 28.8%,
+            #3c6382 45.29%,
+            #079992 82.96%
           );
-          z-index: 9;
           padding-right: 0;
         }
 
@@ -82,7 +85,7 @@ export default function Home() {
           font-weight: 500;
           font-size: clamp(5.0264vw, 5.0264vw, 154.5px);
           line-height: 115%;
-          color: #8cedfe;
+          color: #33d9b2;
           color: color(display-p3 0.549 0.929 0.996);
           width: clamp(32vw, 32vw, 991.92px);
           margin-bottom: 1.435vw;
