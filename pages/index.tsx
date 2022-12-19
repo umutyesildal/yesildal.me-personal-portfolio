@@ -1,8 +1,6 @@
 import CommonFooter from "../components/CommonFooter";
 import { useEffect, useState } from "react";
 import CommonHead from "../components/shared/commonHead";
-import ua from 'express-useragent';
-import Work from "components/home/Work";
 import Home from "components/home/Home";
 import Expertise from "components/home/Expertise";
 import parse from "node-html-parser";
