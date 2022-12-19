@@ -24,7 +24,7 @@ export default function Work2() {
         scrub: 1,
         snap: 1 / (totalPanels - 1),
         // base vertical scrolling on how wide the container is so it feels more natural.
-        end: () => "+=" + panelsContainer.current.offsetWidth
+        end: () => "+=" + 1080*panels.current.length
       }
     });
   }, []);
