@@ -52,20 +52,29 @@ export default function Work2() {
             </div>
           </div>
         </div>
-        <section className="panel red" ref={(e) => createPanelsRefs(e, 1)}>
-          ONE
+        <section className="panel" ref={(e) => createPanelsRefs(e, 1)}>
+        <h1>Horizontal snapping sections</h1>
+        <img src="/illustrations/hello_illustration.png" alt="" />
         </section>
-        <section className="panel orange" ref={(e) => createPanelsRefs(e, 2)}>
-          TWO
+        <section className="panel" ref={(e) => createPanelsRefs(e, 2)}>
+        <h1>Horizontal snapping sections</h1>
+        <img src="/illustrations/hello_illustration.png" alt="" />
+
         </section>
-        <section className="panel purple" ref={(e) => createPanelsRefs(e, 3)}>
-          THREE
+        <section className="panel" ref={(e) => createPanelsRefs(e, 3)}>
+        <h1>Horizontal snapping sections</h1>
+        <img src="/illustrations/hello_illustration.png" alt="" />
+
         </section>
-        <section className="panel green" ref={(e) => createPanelsRefs(e, 4)}>
-          FOUR
+        <section className="panel" ref={(e) => createPanelsRefs(e, 4)}>
+        <h1>Horizontal snapping sections</h1>
+        <img src="/illustrations/hello_illustration.png" alt="" />
+
         </section>
-        <section className="panel gray" ref={(e) => createPanelsRefs(e, 5)}>
-          FIVE
+        <section className="panel" ref={(e) => createPanelsRefs(e, 5)}>
+        <h1>Horizontal snapping sections</h1>
+        <img src="/illustrations/hello_illustration.png" alt="" />
+
         </section>
       </div>
     </>
@@ -89,14 +98,14 @@ export default function Work2() {
       
       .panel h1 {
         font-size: 1.8em;
-        color: white;
+        color: black;
         font-weight: 300;
         margin: 0 auto;
       }
       .panel.description {
         padding-bottom: 60px;
       }
-      .panel p,
+      .panel p
       .panel li {
         color: black;
         font-weight: 400;
@@ -119,347 +128,6 @@ export default function Work2() {
       .panel li {
         margin: 0;
       }
-      .gray {
-        background-color: #777;
-        background-image: radial-gradient(
-            circle at 47% 14%,
-            rgba(205, 205, 205, 0.04) 0%,
-            rgba(205, 205, 205, 0.04) 43%,
-            transparent 43%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 35% 12%,
-            rgba(215, 215, 215, 0.04) 0%,
-            rgba(215, 215, 215, 0.04) 4%,
-            transparent 4%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 1% 35%,
-            rgba(24, 24, 24, 0.04) 0%,
-            rgba(24, 24, 24, 0.04) 37%,
-            transparent 37%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 21% 1%,
-            rgba(0, 0, 0, 0.04) 0%,
-            rgba(0, 0, 0, 0.04) 26%,
-            transparent 26%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 23% 82%,
-            rgba(249, 249, 249, 0.04) 0%,
-            rgba(249, 249, 249, 0.04) 60%,
-            transparent 60%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 11% 54%,
-            rgba(251, 251, 251, 0.04) 0%,
-            rgba(251, 251, 251, 0.04) 23%,
-            transparent 23%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 69% 68%,
-            rgba(234, 234, 234, 0.04) 0%,
-            rgba(234, 234, 234, 0.04) 10%,
-            transparent 10%,
-            transparent 100%
-          ),
-          linear-gradient(90deg, #777, #606060);
-      }
-      .blue {
-        background-color: #2c7ad2;
-        background-image: radial-gradient(
-            circle at 47% 14%,
-            rgba(205, 205, 205, 0.04) 0%,
-            rgba(205, 205, 205, 0.04) 43%,
-            transparent 43%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 35% 12%,
-            rgba(215, 215, 215, 0.04) 0%,
-            rgba(215, 215, 215, 0.04) 4%,
-            transparent 4%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 1% 35%,
-            rgba(24, 24, 24, 0.04) 0%,
-            rgba(24, 24, 24, 0.04) 37%,
-            transparent 37%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 21% 1%,
-            rgba(0, 0, 0, 0.04) 0%,
-            rgba(0, 0, 0, 0.04) 26%,
-            transparent 26%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 23% 82%,
-            rgba(249, 249, 249, 0.04) 0%,
-            rgba(249, 249, 249, 0.04) 60%,
-            transparent 60%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 11% 54%,
-            rgba(251, 251, 251, 0.04) 0%,
-            rgba(251, 251, 251, 0.04) 23%,
-            transparent 23%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 69% 68%,
-            rgba(234, 234, 234, 0.04) 0%,
-            rgba(234, 234, 234, 0.04) 10%,
-            transparent 10%,
-            transparent 100%
-          ),
-          linear-gradient(90deg, #2c7ad2, #1568c6);
-      }
-      .orange {
-        background-color: #e77614;
-        background-image: radial-gradient(
-            circle at 46% 40%,
-            rgba(228, 228, 228, 0.06) 0%,
-            rgba(228, 228, 228, 0.06) 13%,
-            transparent 13%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 11% 41%,
-            rgba(198, 198, 198, 0.06) 0%,
-            rgba(198, 198, 198, 0.06) 19%,
-            transparent 19%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 52% 23%,
-            rgba(14, 14, 14, 0.06) 0%,
-            rgba(14, 14, 14, 0.06) 69%,
-            transparent 69%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 13% 85%,
-            rgba(148, 148, 148, 0.06) 0%,
-            rgba(148, 148, 148, 0.06) 44%,
-            transparent 44%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 57% 74%,
-            rgba(232, 232, 232, 0.06) 0%,
-            rgba(232, 232, 232, 0.06) 21%,
-            transparent 21%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 59% 54%,
-            rgba(39, 39, 39, 0.06) 0%,
-            rgba(39, 39, 39, 0.06) 49%,
-            transparent 49%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 98% 38%,
-            rgba(157, 157, 157, 0.06) 0%,
-            rgba(157, 157, 157, 0.06) 24%,
-            transparent 24%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 8% 6%,
-            rgba(60, 60, 60, 0.06) 0%,
-            rgba(60, 60, 60, 0.06) 12%,
-            transparent 12%,
-            transparent 100%
-          ),
-          linear-gradient(90deg, #ff7600, #ff7600);
-      }
-      
-      .red {
-        background-color: #c82736;
-        background-image: radial-gradient(
-            circle at 19% 90%,
-            rgba(190, 190, 190, 0.04) 0%,
-            rgba(190, 190, 190, 0.04) 17%,
-            transparent 17%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 73% 2%,
-            rgba(78, 78, 78, 0.04) 0%,
-            rgba(78, 78, 78, 0.04) 94%,
-            transparent 94%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 45% 2%,
-            rgba(18, 18, 18, 0.04) 0%,
-            rgba(18, 18, 18, 0.04) 55%,
-            transparent 55%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 76% 60%,
-            rgba(110, 110, 110, 0.04) 0%,
-            rgba(110, 110, 110, 0.04) 34%,
-            transparent 34%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 68% 56%,
-            rgba(246, 246, 246, 0.04) 0%,
-            rgba(246, 246, 246, 0.04) 16%,
-            transparent 16%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 71% 42%,
-            rgba(156, 156, 156, 0.04) 0%,
-            rgba(156, 156, 156, 0.04) 47%,
-            transparent 47%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 46% 82%,
-            rgba(247, 247, 247, 0.04) 0%,
-            rgba(247, 247, 247, 0.04) 39%,
-            transparent 39%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 50% 47%,
-            rgba(209, 209, 209, 0.04) 0%,
-            rgba(209, 209, 209, 0.04) 45%,
-            transparent 45%,
-            transparent 100%
-          ),
-          linear-gradient(90deg, #e53949, #cc2232);
-      }
-      
-      .purple {
-        background-color: #8d3dae;
-        background-image: radial-gradient(
-            circle at 47% 14%,
-            rgba(205, 205, 205, 0.04) 0%,
-            rgba(205, 205, 205, 0.04) 43%,
-            transparent 43%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 35% 12%,
-            rgba(215, 215, 215, 0.04) 0%,
-            rgba(215, 215, 215, 0.04) 4%,
-            transparent 4%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 1% 35%,
-            rgba(24, 24, 24, 0.04) 0%,
-            rgba(24, 24, 24, 0.04) 37%,
-            transparent 37%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 21% 1%,
-            rgba(0, 0, 0, 0.04) 0%,
-            rgba(0, 0, 0, 0.04) 26%,
-            transparent 26%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 23% 82%,
-            rgba(249, 249, 249, 0.04) 0%,
-            rgba(249, 249, 249, 0.04) 60%,
-            transparent 60%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 11% 54%,
-            rgba(251, 251, 251, 0.04) 0%,
-            rgba(251, 251, 251, 0.04) 23%,
-            transparent 23%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 69% 68%,
-            rgba(234, 234, 234, 0.04) 0%,
-            rgba(234, 234, 234, 0.04) 10%,
-            transparent 10%,
-            transparent 100%
-          ),
-          linear-gradient(90deg, #8d3dae, #8d3dae);
-      }
-      .green {
-        background-color: #28a92b;
-        background-image: radial-gradient(
-            circle at 46% 40%,
-            rgba(228, 228, 228, 0.06) 0%,
-            rgba(228, 228, 228, 0.06) 13%,
-            transparent 13%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 11% 41%,
-            rgba(198, 198, 198, 0.06) 0%,
-            rgba(198, 198, 198, 0.06) 19%,
-            transparent 19%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 52% 23%,
-            rgba(14, 14, 14, 0.06) 0%,
-            rgba(14, 14, 14, 0.06) 69%,
-            transparent 69%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 13% 85%,
-            rgba(148, 148, 148, 0.06) 0%,
-            rgba(148, 148, 148, 0.06) 44%,
-            transparent 44%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 57% 74%,
-            rgba(232, 232, 232, 0.06) 0%,
-            rgba(232, 232, 232, 0.06) 21%,
-            transparent 21%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 59% 54%,
-            rgba(39, 39, 39, 0.06) 0%,
-            rgba(39, 39, 39, 0.06) 49%,
-            transparent 49%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 98% 38%,
-            rgba(157, 157, 157, 0.06) 0%,
-            rgba(157, 157, 157, 0.06) 24%,
-            transparent 24%,
-            transparent 100%
-          ),
-          radial-gradient(
-            circle at 8% 6%,
-            rgba(60, 60, 60, 0.06) 0%,
-            rgba(60, 60, 60, 0.06) 12%,
-            transparent 12%,
-            transparent 100%
-          ),
-          linear-gradient(90deg, #28a92b, #10a614);
-      }
       
       html,
       body {
@@ -474,6 +142,7 @@ export default function Work2() {
         width: 100%;
         height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         font-weight: 600;
