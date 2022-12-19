@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+
+
+
 export default function Contact() {
   const [texts] = useState({
     title: `<strong>Get in touch</strong> with me.`,
@@ -17,11 +20,12 @@ export default function Contact() {
             <p dangerouslySetInnerHTML={{ __html: texts.subtitle }}></p>
           </div>
           <div className="content2">
-            <button>
+            <button onClick={() => window.location.href = 'mailto:umutyesildal97@gmail.com'} >
               Say Hello
             </button>
           </div>
       </section>
+      
       <style jsx>{`
 
         section {
@@ -37,16 +41,20 @@ export default function Contact() {
 
         section .content2 button {
           background: #234d63;
-          border-radius: 28px;
+          border-radius: 32px;
           color: #ffffff;
           font-size: 1.5vw;
           width: 15%;
-          height: 5vw;
+          height: 4.5vw;
+        }
+
+        section .content2 img {
+          height: 4.5vw;
         }
         
         section .content2 button:hover {
-          background: #3cb0fd;
-          text-decoration: none;
+          background: #c1f3e7;
+          color: #234d63;
         }
 
         section .content h2 {

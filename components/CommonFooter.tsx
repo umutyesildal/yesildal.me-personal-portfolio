@@ -11,6 +11,7 @@ export default function CommonFooter() {
       <style jsx>{`
         footer {
           padding-top: 4vw;
+          padding-bottom: 1vw;
           margin: auto;
           text-align: center;
 
@@ -21,8 +22,8 @@ export default function CommonFooter() {
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
-          font-weight: 300;
-          font-size: 1.5873vw;
+          font-weight: 200;
+          font-size: .8873vw;
           line-height: 140%;
           color: #234d63;
         }

@@ -39,7 +39,9 @@ export default function SimpleAccordion() {
     <div className="accordion-style">
             {
               questions.questions.map((i) => {
-                return  <Accordion elevation={0}>
+                return  <Accordion elevation={0}
+                sx= {{ backgroundColor: '#c1f3e7', paddingTop: '5px', paddingBottom: '5px'}}
+                >
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon 
                     sx={{ color: '#234d63',
@@ -59,7 +61,6 @@ export default function SimpleAccordion() {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography
-                  sx={{ color: '#A0A0AA'}}
                   >{i.questionDescription}
                   </Typography>
                 </AccordionDetails>

@@ -16,14 +16,16 @@ export default function Experience() {
             dangerouslySetInnerHTML={{ __html: texts.title }}
           ></h2>
           <p dangerouslySetInnerHTML={{ __html: texts.subtitle }}></p>
+          <div className="accordion" >
           <SimpleAccordion/>
+          </div>
         </div>
       </section>
       <style jsx>{`
         section {
           position: relative;
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           padding: 4vw 5.103vw 2vw 10.317vw;
           background-color: #c1f3e7;
 
@@ -40,7 +42,9 @@ export default function Experience() {
           display: flex;
           flex-direction: column;
         }
-
+        section .accordion{
+          width: 100%;
+        }
 
         section .content h2 {
           font-family: TWK Everett, -apple-system, BlinkMacSystemFont,

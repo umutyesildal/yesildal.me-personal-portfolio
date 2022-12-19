@@ -10,6 +10,7 @@ import Navigation from "components/Navigation";
 import Experience from "components/home/Experience";
 import Contact from "components/home/Contact";
 import { Link } from "react-scroll";
+import Work2 from "components/home/Work2";
 
 
 export default function Index({
@@ -75,7 +76,7 @@ export default function Index({
           <div id="smooth-content">
             <section id="home"><Home/></section>
             <section id="expertise"><Expertise/></section>
-            <section id="work"><Work/></section>
+            <section id="work"><Work2/></section>
             <section id="experience"><Experience/></section>
             <section id="contact"><Contact/></section>
           </div>
