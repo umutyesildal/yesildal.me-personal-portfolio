@@ -1,30 +1,30 @@
 @font-face {
-  font-family: 'TWK Everett';
-  src: url(/fonts/TWKEverett-Light.otf) format('opentype');
+  font-family: 'Visby';
+  src: url(/fonts/VisbyLight.otf) format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'TWK Everett';
-  src: url(/fonts/TWKEverett-Regular.otf) format('opentype');
+  font-family: 'Visby';
+  src: url(/fonts/VisbyRegular.otf) format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'TWK Everett';
-  src: url(/fonts/TWKEverett-Medium.otf) format('opentype');
+  font-family: 'Visby';
+  src: url(/fonts/VisbyMedium.otf) format('opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'TWK Everett';
-  src: url(/fonts/TWKEverett-Bold.otf) format('opentype');
+  font-family: 'Visby';
+  src: url(/fonts/VisbyBold.otf) format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -114,7 +114,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: TWK Everett, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-style: normal;
   font-weight: normal;
@@ -125,7 +125,7 @@ html {
 
 body {
   font-family: sans-serif;
-  font-family: TWK Everett, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-style: normal;
   font-weight: normal;
@@ -157,7 +157,7 @@ a{
 
 
 .primary-button {
-  background: #8cedfe;
+  background: #0abde3;
   background: color(display-p3 0.549 0.929 0.996);
   box-shadow: 0px 0.26455vw 0.26455vw rgba(140, 237, 254, 0.25);
   border: none;
@@ -166,7 +166,7 @@ a{
   flex-direction: row;
   align-items: flex-start;
   padding: 0 1.05820vw;
-  font-family: TWK Everett, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-style: normal;
   font-weight: 400;

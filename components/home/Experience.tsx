@@ -3,9 +3,9 @@ import { useState } from "react";
 
 export default function Experience() {
   const [texts] = useState({
-    title: `<strong>Experience,</strong> daha önce çalıştığım işler`,
+    title: `<strong>Experience,</strong> where i worked before`,
     subtitle:
-      `Bu şirketlerde çalıştım ve şu görevleri aldım şunları bunları yaptım`,
+      `What i have done before, where i worked before and which position i was before`,
   });
   
   return (
@@ -47,7 +47,7 @@ export default function Experience() {
         }
 
         section .content h2 {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -60,7 +60,7 @@ export default function Experience() {
         }
 
         section .content p {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -118,7 +118,7 @@ export default function Experience() {
         }
 
         section .content ul span {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;

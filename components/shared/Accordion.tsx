@@ -20,15 +20,19 @@ export default function SimpleAccordion() {
   const [questions] = useState({
     questions: [
     {
-      questionTitle: 'Şurası gmbh 2013-2015',
+      questionTitle: 'Entrepreneur İTÜ Çekirdek Jan2020-June2020',
+      questionDescription: 'Learned the fundamentals of entrepreneurship. Taken various seminars from İTÜ Çekirdek Mentors and found the opportunity to do meetings with these Mentors. Worked at a time management project called "Crillo" and earned 10.000$ worth of credit from İTÜ Çekirdek.'
+    },
+    {
+      questionTitle: 'Intern Vendrops Technologies Sep2020-Mar2021',
+      questionDescription: 'I learned the fundamental parts of the backend web programming using Node.js, Express.js, Gatsby.js. I created a Documentation page of the product using Gatsby.js.I learned the fundamentals of Testing. I learned and used Whitebox Testing, Blackbox Testing, Monkey Testing, Unit Testing and used them when testing the project. I helped the team in the creation of Facilera Tasks App by flutter development, bug fixing and testing.Learned the real life usage of Agile Methodology and SCRUM.'
+    },
+    {
+      questionTitle: 'Flutter Developer Platri IT GmbH Feb2021-Jan2022',
       questionDescription: 'Description'
     },
     {
-      questionTitle: 'Şurası gmbh 2013-2015',
-      questionDescription: 'Description'
-    },
-    {
-      questionTitle: 'Şurası gmbh 2013-2015',
+      questionTitle: 'Software Developer Metavest Mar2022-Still',
       questionDescription: 'Description'
     }
   
@@ -55,12 +59,19 @@ export default function SimpleAccordion() {
                     color: '#234d63',
                     fontSize: '1.5873vw',
                     lineHeight: '122%',
+                    fontFamily: 'Visby'
                   }}>
                     {i.questionTitle}
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography
+                                    sx={{ 
+                                      color: '#234d63',
+                                      fontSize: '1.5873vw',
+                                      lineHeight: '122%',
+                                      fontFamily: 'Visby'
+                                    }}
                   >{i.questionDescription}
                   </Typography>
                 </AccordionDetails>

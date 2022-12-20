@@ -196,7 +196,7 @@ export default function Navigation({
         nav ul li.secondary.language-select button {
           border: none;
           background: none;
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -248,7 +248,7 @@ export default function Navigation({
         }
 
         nav ul li.secondary.language-select div ul li button {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           cursor: pointer;
@@ -293,7 +293,7 @@ export default function Navigation({
         }
 
         nav ul li.secondary a, nav ul li.primary p {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -545,7 +545,7 @@ export default function Navigation({
           nav .mobile-menu ul li.secondary.language-select select {
             border: none;
             background: none;
-            font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+            font-family: Visby, -apple-system, BlinkMacSystemFont,
                 "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
                 "Segoe UI Emoji";
             font-style: normal;

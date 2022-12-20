@@ -24,6 +24,7 @@ export default function Contact() {
               Say Hello
             </button>
           </div>
+
       </section>
       
       <style jsx>{`
@@ -42,10 +43,16 @@ export default function Contact() {
         section .content2 button {
           background: #234d63;
           border-radius: 32px;
-          color: #ffffff;
-          font-size: 1.5vw;
           width: 15%;
           height: 4.5vw;
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5873vw;
+        line-height: 140%;
+        color: #ffffff;
         }
 
         section .content2 img {
@@ -58,7 +65,7 @@ export default function Contact() {
         }
 
         section .content h2 {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -67,10 +74,11 @@ export default function Contact() {
           line-height: 122%;
           color: #234d63;
           margin-bottom: 2.513vw;
+          animation-delay: 0s;
         }
 
         section .content p {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;

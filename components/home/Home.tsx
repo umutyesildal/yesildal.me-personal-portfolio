@@ -4,8 +4,8 @@ import {useState, useEffect, useRef} from 'react';
 export default function Home() {
   const [texts] = useState({
     title: "Umut Yunus Yeşildal",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
-    actionText: "See more <strong>socials</strong>",
+    subtitle: "I am a Software Developer focused on drifting with the wind of newly developed tech.<br/><br/> Jack of all trades, master of none. (yet)",
+    actionText: "See more <br/>socials",
   });
 
   /// TODO: Add your photos to here
@@ -23,12 +23,12 @@ export default function Home() {
             <span dangerouslySetInnerHTML={{ __html: texts.actionText }}></span>
             <a
               className="primary-button"
-              href="https://metave.st/download">
+              href="https://github.com/umutyesildal">
                 Github
               </a>
             <a
               className="primary-button"
-              href="https://metave.st/download">
+              href="https://linkedin.com/in/umut-ye%C5%9Fildal-10546812a">
                 Linkedin
               </a>
           </div>
@@ -48,9 +48,9 @@ export default function Home() {
           padding: 12.235vw 12.103vw 10.978vw;
           background: linear-gradient(
             149.15deg,
-            #2f3640 28.8%,
+            #0a3d62 28.8%,
             #3c6382 45.29%,
-            #079992 82.96%
+            #60a3bc 82.96%
           );
           padding-right: 0;
         }
@@ -78,14 +78,14 @@ export default function Home() {
 
         .intro .content h1 {
           opacity: 0;
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
           font-weight: 500;
           font-size: clamp(5.0264vw, 5.0264vw, 154.5px);
           line-height: 115%;
-          color: #33d9b2;
+          color: #a8d0e6;
           color: color(display-p3 0.549 0.929 0.996);
           width: clamp(32vw, 32vw, 991.92px);
           margin-bottom: 1.435vw;
@@ -95,7 +95,7 @@ export default function Home() {
 
         .intro .content p {
           opacity: 0;
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -115,8 +115,6 @@ export default function Home() {
         .intro .content .action {
           opacity: 0;
           padding: 1.19047vw 1.32275vw 1.32275vw 1.32275vw;
-          border: 0.8px solid #8cedfe;
-          border-color: color(display-p3 0.549 0.929 0.996);
           box-sizing: border-box;
           border-radius: 0.92592vw;
           display: flex;
@@ -126,11 +124,11 @@ export default function Home() {
           width: clamp(26.5873vw, 26.5873vw, 817.25px);
           animation: fadeIn 1.2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
           animation-delay: 2.1s;
-          background: rgba(35, 77, 99, 0.58);
+          background: #0a3d62;
         }
 
         .intro .content .action span {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -507,7 +505,7 @@ export default function Home() {
       `}</style>
       <style jsx global>{`
         .intro .content .action span strong {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;

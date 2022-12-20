@@ -3,22 +3,23 @@ export default function CommonFooter() {
 
   return (
     <>
-      <footer>         
+      <footer>
+      <hr className="solid" />    
       <h2>
       Built by yesildal.
       </h2>
       </footer>
       <style jsx>{`
         footer {
-          padding-top: 4vw;
-          padding-bottom: 1vw;
+          padding: 4vw 5.103vw 2vw 10.317vw;
           margin: auto;
           text-align: center;
 
         }
+
         
         footer h2{
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -26,6 +27,7 @@ export default function CommonFooter() {
           font-size: .8873vw;
           line-height: 140%;
           color: #234d63;
+          padding-top: 1vw;
         }
 
         @media screen AND (max-width: 526px) {

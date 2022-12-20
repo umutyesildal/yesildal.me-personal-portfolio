@@ -33,7 +33,7 @@ export default function FormSection(props){
 
 
           .container h3 {
-              font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+              font-family: Visby, -apple-system, BlinkMacSystemFont,
               "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
               "Segoe UI Emoji";
               font-style: normal;
@@ -47,7 +47,7 @@ export default function FormSection(props){
           }
 
           .container h5 {
-              font-family: TWK Everett,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+              font-family: Visby,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
               font-style: normal;
               font-weight: 400;
               color: #234D63;

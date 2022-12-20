@@ -13,7 +13,7 @@ function SectionTitle(props:SectionTitleProps){
     <h2 className={className}>{props.children}</h2>
     <style jsx>{`
       h2 {
-          font-family: TWK Everett,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+          font-family: Visby,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
           font-style: normal;
           font-weight: normal;
           font-size: 2.6455vw;
