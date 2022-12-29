@@ -8,7 +8,6 @@ import Navigation from "components/Navigation";
 import Experience from "components/home/Experience";
 import Contact from "components/home/Contact";
 import { Link } from "react-scroll";
-import WorkDesktop from "components/home/WorkDesktop";
 import WorkMobile from "components/home/WorkMobile";
 
 
