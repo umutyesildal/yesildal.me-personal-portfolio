@@ -4,7 +4,7 @@ import {useState, useEffect, useRef} from 'react';
 export default function Home() {
   const [texts] = useState({
     title: "Umut Yunus Yeşildal",
-    subtitle: "I am a Software Developer focused on drifting with the wind of newly developed tech.<br/><br/> Jack of all trades, master of none. (yet)",
+    subtitle: "I am a Software Developer focused on drifting with the wind of newly developed tech.<br/><br/> Jack of all trades, master of none, but oftentimes better than a master of one.",
     actionText: "See more <br/>socials",
   });
 
@@ -19,20 +19,6 @@ export default function Home() {
             style={{ opacity: 0 }}
             dangerouslySetInnerHTML={{ __html: texts.subtitle }}
           ></p>
-          <div className="action">
-            <span dangerouslySetInnerHTML={{ __html: texts.actionText }}></span>
-            <a
-              className="primary-button"
-              href="https://github.com/umutyesildal">
-                Github
-              </a>
-            <a
-              className="primary-button"
-              href="https://linkedin.com/in/umut-ye%C5%9Fildal-10546812a">
-                Linkedin
-              </a>
-          </div>
-
         </div>
         <div className={`preview-container ${'shown-preview'}`}>
           <div className='preview-inner'>
@@ -46,12 +32,7 @@ export default function Home() {
           position: relative;
           display: flex;
           padding: 12.235vw 12.103vw 10.978vw;
-          background: linear-gradient(
-            149.15deg,
-            #0a3d62 28.8%,
-            #3c6382 45.29%,
-            #60a3bc 82.96%
-          );
+          background: #2d3436;
           padding-right: 0;
         }
 
@@ -85,7 +66,7 @@ export default function Home() {
           font-weight: 500;
           font-size: clamp(5.0264vw, 5.0264vw, 154.5px);
           line-height: 115%;
-          color: #a8d0e6;
+          color: #bae374;
           color: color(display-p3 0.549 0.929 0.996);
           width: clamp(32vw, 32vw, 991.92px);
           margin-bottom: 1.435vw;

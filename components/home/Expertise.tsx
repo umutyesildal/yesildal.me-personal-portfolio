@@ -14,7 +14,7 @@ export default function Expertise() {
     item1:
       `Worked on mobile development with Flutter framework and dart programming language.`,
     item2:
-      `Worked on various projects with front end falan`,
+      `Created beautiful UI for both mobile and web, mostly used React framework along with HTML-CSS.`,
     item3:
       `Even tho this is an expertise page, i am passionate about the blockchain and smart contracts. Hopefully i will be deleting the Newbie tag from the title soon.`,
   });
@@ -85,7 +85,7 @@ export default function Expertise() {
           font-weight: 300;
           font-size: 3.43391vw;
           line-height: 122%;
-          color: #234d63;
+          color: #2d3436;
           margin-bottom: 2.513vw;
           animation-delay: 0s;
         }
@@ -99,7 +99,7 @@ export default function Expertise() {
           font-weight: 300;
           font-size: 1.5873vw;
           line-height: 140%;
-          color: #234d63;
+          color: #2d3436;
           margin-bottom: 2.513vw;
           animation-delay: 0.3s;
         }
@@ -210,7 +210,7 @@ export default function Expertise() {
           section .content > ul li {
             width: 100%;
             margin-right: 0;
-            flex-direction: row-reverse;
+            flex-direction: column;
             justify-content: space-between;
             padding: 17px 0 28px 0;
             border-top: 1px solid #eeeef2;
@@ -219,8 +219,17 @@ export default function Expertise() {
           section .content > ul li span {
             font-size: 15px;
             line-height: 20px;
-            width: 70%;
           }
+
+          section .content > ul li img {
+            display: none;
+          }
+
+          section .content > ul li h4 {
+            font-size: 15px;
+            line-height: 20px;
+          }
+
         }
 
         @media screen AND (max-width: 526px) {

@@ -26,7 +26,7 @@ export default function CommonFooter() {
           font-weight: 200;
           font-size: .8873vw;
           line-height: 140%;
-          color: #234d63;
+          color: #2d3436;
           padding-top: 1vw;
         }
 

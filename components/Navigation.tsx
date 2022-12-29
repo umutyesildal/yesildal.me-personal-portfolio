@@ -183,7 +183,7 @@ export default function Navigation({
         }
 
         nav.sticky.dim ul li.secondary a, nav.sticky.dim ul li.primary p {
-          color: #218c74;
+          color: #2d3436;
         }
 
         nav .mobile-menu ul li p {
@@ -222,7 +222,7 @@ export default function Navigation({
           left: 50%;
           transform: translateX(-50%) scale(0.5);
           transition: 0.15s all;
-          box-shadow: 0 3px 12px #234d6322;
+          box-shadow: 0 3px 12px #2d343622;
         }
         nav ul li.secondary.language-select div[data-open=true] {
           position: absolute;
@@ -346,7 +346,7 @@ export default function Navigation({
         }
 
         nav ul li div ul li button p{
-          color: #234d63;
+          color: #2d3436;
         }
 
         @media screen and (max-width: 992px) {
@@ -586,7 +586,7 @@ export default function Navigation({
         nav.dark-style ul li.secondary a, nav.dark-style ul li.secondary a,
         nav.dark-style ul li.primary button p
         {
-          color: #234D63;
+          color: #2d3436;
         }
 
         nav.dark-style.sticky ul li.primary button p{

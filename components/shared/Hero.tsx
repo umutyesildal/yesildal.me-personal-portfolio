@@ -48,7 +48,7 @@ export default function Hero(props){
                 font-family: Visby,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
                 font-style: normal;
                 font-weight: 400;
-                color: #234D63;
+                color: #2d3436;
                 margin-top: 2vw;
                 font-size: min(25px,3.6vw);
                 z-index: 1;

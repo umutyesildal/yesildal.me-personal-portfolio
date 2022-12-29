@@ -44,11 +44,11 @@ export default function SimpleAccordion() {
             {
               questions.questions.map((i) => {
                 return  <Accordion elevation={0}
-                sx= {{ backgroundColor: '#c1f3e7', paddingTop: '5px', paddingBottom: '5px'}}
+                sx= {{ backgroundColor: '#bae374', paddingTop: '5px', paddingBottom: '5px'}}
                 >
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon 
-                    sx={{ color: '#234d63',
+                    sx={{ color: '#2d3436',
                     }}
                   />}
                   aria-controls="panel1a-content"
@@ -56,8 +56,8 @@ export default function SimpleAccordion() {
                 >
                   <Typography
                   sx={{ 
-                    color: '#234d63',
-                    fontSize: '1.5873vw',
+                    color: '#2d3436',
+                    fontSize: '20px',
                     lineHeight: '122%',
                     fontFamily: 'Visby'
                   }}>
@@ -67,8 +67,8 @@ export default function SimpleAccordion() {
                 <AccordionDetails>
                   <Typography
                                     sx={{ 
-                                      color: '#234d63',
-                                      fontSize: '1.5873vw',
+                                      color: '#2d3436',
+                                      fontSize: '20px',
                                       lineHeight: '122%',
                                       fontFamily: 'Visby'
                                     }}

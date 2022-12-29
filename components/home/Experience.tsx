@@ -27,7 +27,7 @@ export default function Experience() {
           display: flex;
           flex-direction: column;
           padding: 4vw 5.103vw 2vw 10.317vw;
-          background-color: #c1f3e7;
+          background-color: #bae374;
 
         }
 
@@ -54,7 +54,7 @@ export default function Experience() {
           font-weight: 300;
           font-size: 3.43391vw;
           line-height: 122%;
-          color: #234d63;
+          color: #2d3436;
           margin-bottom: 2.513vw;
           animation-delay: 0s;
         }
@@ -67,7 +67,7 @@ export default function Experience() {
           font-weight: 300;
           font-size: 1.5873vw;
           line-height: 140%;
-          color: #234d63;
+          color: #2d3436;
           margin-bottom: 2.513vw;
           animation-delay: 0.3s;
         }

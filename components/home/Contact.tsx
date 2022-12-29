@@ -41,7 +41,7 @@ export default function Contact() {
         }
 
         section .content2 button {
-          background: #234d63;
+          background: #2d3436;
           border-radius: 32px;
           width: 15%;
           height: 4.5vw;
@@ -60,8 +60,8 @@ export default function Contact() {
         }
         
         section .content2 button:hover {
-          background: #c1f3e7;
-          color: #234d63;
+          background: #bae374;
+          color: #2d3436;
         }
 
         section .content h2 {
@@ -72,7 +72,7 @@ export default function Contact() {
           font-weight: 300;
           font-size: 3.43391vw;
           line-height: 122%;
-          color: #234d63;
+          color: #2d3436;
           margin-bottom: 2.513vw;
           animation-delay: 0s;
         }
@@ -85,7 +85,7 @@ export default function Contact() {
           font-weight: 300;
           font-size: 1.5873vw;
           line-height: 140%;
-          color: #234d63;
+          color: #2d3436;
           margin-bottom: 2.513vw;
           margin-right: 5vw;
         }
