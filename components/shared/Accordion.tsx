@@ -29,11 +29,11 @@ export default function SimpleAccordion() {
     },
     {
       questionTitle: 'Flutter Developer Platri IT GmbH Feb2021-Jan2022',
-      questionDescription: 'Description'
+      questionDescription: 'Worked at some projects called “DanceFlavors”,”Signalficant”, ”Nimag” at Platri GmbH. Working with BLoC, state management and Null Safety since the start of the project. Using the package system and creating my own packages in order to have cleaner code and making the packages continually usable for other projects. Using multiple local databases for different needs so that each database has their own usage. For Key-Value Pair i used Hive and for SQL database i used SQFLite.'
     },
     {
       questionTitle: 'Software Developer Metavest Mar2022-Still',
-      questionDescription: 'Description'
+      questionDescription: 'Currently working at Metavest as a software developer, mostly focused on creating front-end pages using react and javascript and creating micro-packages for various purposes with python and javascript.'
     }
   
   ]

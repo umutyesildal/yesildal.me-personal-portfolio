@@ -54,6 +54,9 @@ export default function WorkMobile() {
         <div className="content">
         <h1 style={{width: 'clamp(32vw, 32vw, 991.92px)', textAlign: 'left'}} dangerouslySetInnerHTML={{__html: `<strong>Danceflavors</strong> Mobile App`}} ></h1>
         <p style={{width: 'clamp(32vw, 32vw, 890.43px)', textAlign: 'left'}}  >Worked on Danceflavors app for a year, created frontend for the app, took a part in designing and implementing the architecture of the backend.</p>
+        <div className="box">
+        <button><span>Website </span></button>
+        </div>
         </div>
         <img src="/work/danceflavors_app.png" alt="DanceFlavors App" />
         </section>
@@ -61,23 +64,38 @@ export default function WorkMobile() {
         <div className="content">
         <h1 style={{width: 'clamp(32vw, 32vw, 991.92px)', textAlign: 'left'}}  dangerouslySetInnerHTML={{__html: `<strong>Metavest</strong> Website`}} ></h1>
         <p style={{width: 'clamp(32vw, 32vw, 890.43px)', textAlign: 'left'}}  >Worked on metavest.app website and created bunch of pages at metavest.app</p>
+        <div className="box">
+        <button style={{backgroundColor: '#3f4399', color: '#FFFFFF' }} ><span>Website </span></button>
+        </div>
         </div>
         </section>
         <section className="panel purple" ref={(e) => createPanelsRefs(e, 3)}>
         <div className="content">
         <h1 style={{color: '#ecf0f1',width: 'clamp(32vw, 32vw, 991.92px)', textAlign: 'left'}} dangerouslySetInnerHTML={{__html: `<strong>Mercedes</strong> Assistify App`}}></h1>
         <p style={{color: '#ecf0f1',width: 'clamp(32vw, 32vw, 890.43px)', textAlign: 'left'}} >Worked on Danceflavors app for a year, created frontend for the app, took a part in designing and implementing the architecture of the backend.</p>
+        <div className="box">
+        <button><span>Github </span></button>
+        </div>
         </div>
         </section>
         <section className="panel green" ref={(e) => createPanelsRefs(e, 4)}>
         <div className="content">
-        <h1 style={{width: 'clamp(32vw, 32vw, 991.92px)', textAlign: 'left'}}  dangerouslySetInnerHTML={{__html: `<strong>Sharify</strong> Mobile App`}}></h1>
+        <h1 style={{width: 'clamp(32vw, 32vw, 991.92px)', textAlign: 'left'}}  dangerouslySetInnerHTML={{__html: `<strong>DaiDay</strong> Mobile App`}}></h1>
         <p style={{width: 'clamp(32vw, 32vw, 890.43px)', textAlign: 'left'}}  >Worked on Danceflavors app for a year, created frontend for the app, took a part in designing and implementing the architecture of the backend.</p>
+        <div className="box">
+        <button style={{backgroundColor: '#2f3640', color: '#44bd32' }} ><span>Github </span></button>
         </div>
+        </div>
+        <img style={{}} src="/work/daiday.png" alt="DanceFlavors App" />
         </section>
         <section className="panel gray" ref={(e) => createPanelsRefs(e, 5)}>
           <div className="links" >
           <h1 style={{color: '#bae374'}} dangerouslySetInnerHTML={{__html: `<strong>More,</strong> checkout more at links below`}} ></h1>
+          <div className="box2">
+        <button><span>Yesildal.me </span></button>
+        <button><span>Github </span></button>
+        <button><span>Github </span></button>
+        </div>
           </div>
         </section>
       </div>
@@ -272,6 +290,109 @@ body {
   width: 50%;
   background: #3d474a;
   margin: 0 auto;
+}
+
+.box {
+    padding-top: 30px;
+    width: clamp(32vw, 32vw, 890.43px);
+    display: flex;
+    flex-direction: row;
+}
+
+.box button{
+  font-family: Visby, -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji";
+font-style: normal;
+font-weight: 400;
+font-size: 0.8em;
+line-height: 122%;
+margin-bottom: 2.513vw;
+line-height: 115%;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  width: 10vw;
+  height: 3vw;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.box button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.box button span:after {
+  content: '►';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.box button:hover span {
+  padding-right: 25px;
+}
+
+.box button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.box2 {
+  padding-top: 30px;
+}
+
+.box2 button{
+font-family: Visby, -apple-system, BlinkMacSystemFont,
+"Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+"Segoe UI Emoji";
+font-style: normal;
+font-weight: 400;
+font-size: 0.8em;
+line-height: 122%;
+margin-bottom: 2.513vw;
+line-height: 115%;
+border-radius: 4px;
+border: none;
+width: 10vw;
+height: 3vw;
+text-align: center;
+transition: all 0.5s;
+cursor: pointer;
+margin-right: 15px;
+background-color: #bae374;
+}
+
+.box2 button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.box2 button span:after {
+content: '►';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.box2 button:hover span {
+padding-right: 25px;
+}
+
+.box2 button:hover span:after {
+opacity: 1;
+right: 0;
 }
 
 

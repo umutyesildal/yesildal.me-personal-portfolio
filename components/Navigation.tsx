@@ -75,10 +75,10 @@ export default function Navigation({
       >
         <a className="home-logo" href="/">
           {
-            !isDark ? <img className="white" src="./logo_white.svg" alt="logo" />
-            : <img className="white" src="/logo_primary.svg" alt="logo" />
+            !isDark ? <img className="white" src="/icon.png" alt="logo" />
+            : <img className="white" src="/icon.png" alt="logo" />
           }
-          <img className="colored" src="/logo_colored_2.svg" alt="logo colored" />
+          <img className="colored" src="/icon.png" alt="logo colored" />
         </a>
      
         <ul className="menu" >
