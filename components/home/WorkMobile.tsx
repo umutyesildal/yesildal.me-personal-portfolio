@@ -68,6 +68,7 @@ export default function WorkMobile() {
         <button style={{backgroundColor: '#3f4399', color: '#FFFFFF' }} ><span>Website </span></button>
         </div>
         </div>
+        <img src="/work/metavest.png" alt="Metavest App" />
         </section>
         <section className="panel purple" ref={(e) => createPanelsRefs(e, 3)}>
         <div className="content">
@@ -397,6 +398,7 @@ right: 0;
 
 
 .panel img {
+  text-align: center;
   width: 30%;
 }
 

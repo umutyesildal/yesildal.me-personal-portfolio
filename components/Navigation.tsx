@@ -115,14 +115,33 @@ export default function Navigation({
             aria-label="menu button"
             className="menu-button"
           ></button>
-          <ul>
-            <li className="secondary">
-              <LanguageLink href={'security'}>
-                {security}
-              </LanguageLink>
-            </li>
-            <li className="filler"></li>
-          </ul>
+        <ul >
+          <li className="secondary">
+          <Link activeClass="active" smooth spy to="home">
+                home
+              </Link>
+          </li>
+          <li className="secondary">
+          <Link activeClass="active" smooth spy to="expertise">
+                expertise
+            </Link>
+          </li>
+          <li className="secondary">
+          <Link activeClass="active" smooth spy to="work">
+                work
+            </Link>
+          </li>
+          <li className="secondary">
+          <Link activeClass="active" smooth spy to="experience">
+                experience
+            </Link>
+          </li>
+          <li className="secondary">
+          <Link activeClass="active" smooth spy to="contact">
+                contact
+            </Link>
+          </li>
+        </ul>
         </div>
       </nav>
       <style jsx global>{`
@@ -438,8 +457,7 @@ export default function Navigation({
             background: transparent;
             background-repeat: no-repeat;
             background-position: center center;
-            transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
-            transform: rotate(0deg);
+            color: #bae374;
           }
 
           nav .mobile-menu .primary button {

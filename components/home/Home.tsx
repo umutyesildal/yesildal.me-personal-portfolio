@@ -225,7 +225,7 @@ export default function Home() {
         @media screen AND (min-width: 526px) {
 
           .preview-container{
-            transform: translateY(10vh);
+            transform: translateY(3vh);
           }
           .shown-preview{
             transform: translateY(0);
@@ -262,7 +262,7 @@ export default function Home() {
           }
 
           .intro .content h1 {
-            font-size: 13vw;
+            font-size: 12vw;
             width: 100%;
             line-height: 120%;
             font-weight: 500;
@@ -272,7 +272,7 @@ export default function Home() {
           }
 
           .intro .content p {
-            font-size: 15.52px;
+            font-size: 4vw;
             line-height: 128%;
             width: 100%;
             padding: 0 15px;
@@ -326,36 +326,6 @@ export default function Home() {
             border-radius: 10vw;
           }
         }
-
-        
-      
-        @media screen AND (min-width: 526px) AND (max-width: 992px) {
-          .intro .content h1 {
-            font-size: 64px;
-          }
-
-          .intro .content p {
-            font-size: 24px;
-          }
-
-          .intro .content .action span {
-            font-size: 20px;
-          }
-
-          .intro .content .action span strong {
-            font-size: 20px;
-          }
-        }
-        @media screen AND (min-width: 993px) AND (max-width: 1199px) {
-          .intro .media.mobile {
-            display: none;
-          }
-          .intro .content .action {
-            width: 29vw;
-          }
-        }
-
-      
 
         @media screen AND (min-width: 1200px) {
 
@@ -433,35 +403,6 @@ export default function Home() {
           }
         }
 
-        @media screen AND (max-width: 375px) {
-          .intro {
-            padding-left: 4vw;
-            padding-right: 4vw;
-          }
-          .intro .content .action{
-            padding-left: 4vw;
-            padding-right: 4vw;
-          }
-
-          .intro .content .action span {
-            font-size: 4vw;
-            margin-right: 8px;
-          }
-
-          .intro .content .action span strong {
-            font-size: 3.5vw;
-          }
-
-          .intro .content .action .primary-button {
-            font-size: 3.4vw;
-          }
-
-          .intro.has-qr .content .qr-container {
-            display: none;
-          }
-          
-        }
-
         @media screen AND (max-width: 526px) {
             .intro .content .action {
               position: fixed;
@@ -470,19 +411,54 @@ export default function Home() {
               right: 3vw;
               width: 94vw;
             }
+
+            .intro {
+              padding-left: 4vw;
+              padding-right: 4vw;
+            }
+            .intro .content .action{
+              padding-left: 4vw;
+              padding-right: 4vw;
+            }
+
+            .intro .content h1 {
+              font-size: 12vw;
+              width: 100%;
+              line-height: 120%;
+              font-weight: 500;
+              text-align: center;
+              text-shadow: 0 0 24px #1e4b6b88;
+              margin-bottom:16px;
+            }
+  
+            .intro .content p {
+              font-size: 4vw;
+              line-height: 128%;
+              width: 100%;
+              padding: 0 15px;
+              font-weight: 300;
+              text-align: center;
+            }
+  
+            .intro .content .action span {
+              font-size: 4vw;
+              margin-right: 8px;
+            }
+  
+            .intro .content .action span strong {
+              font-size: 3.5vw;
+            }
+  
+            .intro .content .action .primary-button {
+              font-size: 3.4vw;
+            }
+  
+            .intro.has-qr .content .qr-container {
+              display: none;
+            }
+            
           }
 
-        @media screen AND (min-width: 1200px) {
-          .preview-container{
-            transform: translateY(4vh);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .preview-inner{
-            max-width: min(18vw, 32vh);
-          }
-        }
       `}</style>
       <style jsx global>{`
         .intro .content .action span strong {

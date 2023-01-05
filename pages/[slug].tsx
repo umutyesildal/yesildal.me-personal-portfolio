@@ -49,6 +49,8 @@ const page = ({name, content, seoTitle, seoDescription, style, head, pageSpesifi
     );
 };
 
+
+
 export async function getServerSideProps(context) {
     let found = false;
 
