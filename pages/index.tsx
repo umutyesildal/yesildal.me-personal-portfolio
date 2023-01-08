@@ -7,14 +7,15 @@ import parse from "node-html-parser";
 import Navigation from "components/Navigation";
 import Experience from "components/home/Experience";
 import Contact from "components/home/Contact";
-import { Link } from "react-scroll";
-import WorkMobile from "components/home/WorkMobile";
+import Work from "components/work/Work";
+import { BrowserView, MobileView } from "react-device-detect";
+import Projects from "components/home/Projects";
 
 
 export default function Index({
   cookie,
   qrLink,
-  isMobile
+
 }) {
   const [texts] = useState({
     title: `Umut Yeşildal`,
@@ -51,7 +52,6 @@ export default function Index({
     }, 50);
   });
 
- 
   return (
     <>
       <CommonHead>
@@ -74,7 +74,14 @@ export default function Index({
           <div id="smooth-content">
             <section id="home"><Home/></section>
             <section id="expertise"><Expertise/></section>
-            <section id="work"><WorkMobile/></section>
+            <section id="work">
+            <BrowserView>
+              <Work/>
+            </BrowserView>
+            <MobileView>
+              <Projects/>
+            </MobileView>
+            </section>
             <section id="experience"><Experience/></section>
             <section id="contact"><Contact/></section>
           </div>

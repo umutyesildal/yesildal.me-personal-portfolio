@@ -131,7 +131,6 @@ export default function Experience() {
         @media screen and (max-width: 992px) {
           section {
             padding: 35px 22px;
-            margin-top: 2vh;
           }
 
           section > .media {

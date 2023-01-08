@@ -3,7 +3,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import React, { useRef, useEffect, useState } from 'react';
 gsap.registerPlugin(ScrollTrigger);
 
-export default function WorkMobile() {
+export default function WorkDesktop() {
   const [texts] = useState({
     title: `<strong>Work,</strong> my previous projects.`,
     subtitle: 'Here are the projects that i have worked on before.'
@@ -31,6 +31,7 @@ export default function WorkMobile() {
       }
     });
   }, []);
+
 
 
   return (

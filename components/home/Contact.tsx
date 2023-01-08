@@ -126,6 +126,21 @@ export default function Contact() {
             font-size: 35px;
           }
 
+          section .content2 button {
+            background: #2d3436;
+            border-radius: 32px;
+            width: 35%;
+            height: 8.5vw;
+            font-family: Visby, -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 3.5873vw;
+          line-height: 140%;
+          color: #ffffff;
+          }
+
           section .content p {
             font-size: 20px;
             line-height: 30px;
