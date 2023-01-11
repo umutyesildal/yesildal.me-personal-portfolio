@@ -11,7 +11,7 @@ export default function CommonFooter() {
       </footer>
       <style jsx>{`
         footer {
-          padding: 4vw 5.103vw 2vw 10.317vw;
+          padding-bottom: 2vw;
           margin: auto;
           text-align: center;
 
@@ -36,6 +36,17 @@ export default function CommonFooter() {
             padding: 0;
             padding-top: 2vh;
             
+          }
+          footer h2{
+            font-family: Visby, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+              "Segoe UI Emoji";
+            font-style: normal;
+            font-weight: 200;
+            font-size: 2.8873vw;
+            line-height: 140%;
+            color: #2d3436;
+            padding-top: 1vw;
           }
         }
       `}</style>

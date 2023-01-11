@@ -11,7 +11,7 @@ assets:     [
   backgroundColor: `#dfe6e940`,
   type: `Mobile App`,
   title: `<strong>Danceflavors</strong>`,
-  subtitle: 'Worked on Danceflavors app for a year, created frontend for the app, took a part in designing and implementing the architecture of the backend.',
+  subtitle: 'Worked on Danceflavors app for a year, created frontend for the app, took a part in designing and implementing the architecture of the backend. Mainly used Flutter and Dart programming language, Hive and SQFLite for database, BLoC for state management.',
   techs: 'Flutter SQL NoSQL BloC',
   links: {
     github: '',
@@ -22,31 +22,31 @@ assets:     [
   backgroundColor: `#E4FAFE`,
   type: `Website`,
   title: `<strong>Metavest</strong>`,
-  subtitle: 'Worked on metavest.app website and created bunch of pages at metavest.app.',
-  techs: 'Flutter SQL NoSQL BloC',
+  subtitle: 'Worked on metavest.app website, created bunch of pages and components with the care of responsive design. Mainly used Reactjs and Nextjs along with CSS and HTML, used Strapi for CMS and localization.',
+  techs: 'Reactjs Nextjs Strapi CSS HTML',
   links: {
     github: '',
-    website: 'https://www.danceflavors.com/'
+    website: 'https://metavest.app/'
   }},
 {
   backgroundColor: `#CCFAED`,
   type: `Mobile App`,
   title: `<strong>DaiDay</strong>`,
-  subtitle: 'Worked on Danceflavors app for a year, created frontend for the app, took a part in designing and implementing the architecture of the backend.',
+  subtitle: 'Created my first solo Mobile app and published it on Google Play Store, even though it is not perfect i am proud of my work and that i learned it all by myself during University. Mainly used Flutter and Dart programming language, Hive and SQFLite for database, BLoC for state management.',
   techs: 'Flutter SQL NoSQL BloC',
   links: {
-    github: '',
-    website: 'https://www.danceflavors.com/'
+    github: 'https://github.com/umutyesildal/daiday',
+    website: 'https://play.google.com/store/apps/details?id=com.greendal.daiday'
   }},
 {
   backgroundColor: `#D5EAFF`,
   type: `Mobile App`,
   title: `<strong>Mercedes Assistify</strong>`,
-  subtitle: 'Worked on Danceflavors app for a year, created frontend for the app, took a part in designing and implementing the architecture of the backend.',
+  subtitle: 'At the last year of my Bachelor, University arranged a joint lecture with Mercedes Turkey. I had the chance to meet with executives of Mercedes Turkey and find a solution to a problem Mercedes is having. Assistify is focused on solving Mercedes car users problems via Mobile App. Mainly used Flutter and Dart programming language, Hive and SQFLite for database, BLoC for state management.',
   techs: 'Flutter SQL NoSQL BloC',
   links: {
-    github: '',
-    website: 'https://www.danceflavors.com/'
+    github: 'https://github.com/umutyesildal/mercedes-assistify',
+    website: ''
   }
 }
 ]
@@ -107,27 +107,17 @@ assets:     [
         margin-bottom: 25px;
 
       }  
+
       p {
         font-family: Visby, -apple-system, BlinkMacSystemFont,
         "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji";
         font-style: normal;
         font-weight: 300;
-        font-size: 17px;
+        font-size: 15px;
         line-height: 20px;
         color: #7a7a85;
         margin-bottom: 25px;
-
-      }  
-      p {
-        font-family: Visby, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 17px;
-        line-height: 20px;
-        color: #7a7a85;
 
       }  
       .item {

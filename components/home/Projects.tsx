@@ -29,7 +29,7 @@ export default function Projects() {
             "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
-          font-size: 29px;
+          font-size: 3.43391vw;
           line-height: 122%;
           color: #2d3436;
           margin-bottom: 2.513vw;
@@ -53,7 +53,31 @@ export default function Projects() {
         section projects-column{
           padding: 
         }
+        @media screen and (max-width: 992px) {
+          section .heading h2 {
+            font-size: 29px;
+            line-height: 122%;
+            width: 87%;
+            margin-bottom: 17px;
+          }
+          section .heading p {
+            font-size: 15px;
+            line-height: 20px;
+            width: 100%;
+            margin-bottom: 32px;
+          }
+        }
 
+        @media screen AND (min-width: 526px) AND (max-width: 992px) {
+          section .heading h2 {
+            font-size: 35px;
+          }
+
+          section .heading p {
+            font-size: 20px;
+            line-height: 30px;
+          }
+        }
       `}</style>
     </>
   );

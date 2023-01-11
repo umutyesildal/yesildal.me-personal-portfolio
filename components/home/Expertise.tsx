@@ -16,7 +16,7 @@ export default function Expertise() {
     item2:
       `Created beautiful UI for both mobile and web, mostly used React framework along with HTML-CSS.`,
     item3:
-      `Even tho this is an expertise page, i am passionate about the blockchain and smart contracts. Hopefully i will be deleting the Newbie tag from the title soon.`,
+      `Even though this is an expertise page, i am passionate about the blockchain and smart contracts. Hopefully i will be deleting the Newbie tag from the title soon.`,
   });
   
   return (

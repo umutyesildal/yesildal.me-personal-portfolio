@@ -54,9 +54,9 @@ export default function WorkDesktop() {
         <section className="panel red" ref={(e) => createPanelsRefs(e, 1)}>
         <div className="content">
         <h1 style={{width: 'clamp(32vw, 32vw, 991.92px)', textAlign: 'left'}} dangerouslySetInnerHTML={{__html: `<strong>Danceflavors</strong> Mobile App`}} ></h1>
-        <p style={{width: 'clamp(32vw, 32vw, 890.43px)', textAlign: 'left'}}  >Worked on Danceflavors app for a year, created frontend for the app, took a part in designing and implementing the architecture of the backend.</p>
+        <p style={{width: 'clamp(32vw, 32vw, 890.43px)', textAlign: 'left'}}  >Worked on Danceflavors app for a year, created frontend for the app, took a part in designing and implementing the architecture of the backend.  Mainly used Flutter and Dart programming language, Hive and SQFLite for database, BLoC for state management.</p>
         <div className="box">
-        <button><span>Website </span></button>
+        <a href="https://www.danceflavors.com/"> <button><span>Website </span></button></a>
         </div>
         </div>
         <img src="/work/danceflavors_app.png" alt="DanceFlavors App" />
@@ -64,39 +64,46 @@ export default function WorkDesktop() {
         <section className="panel orange" ref={(e) => createPanelsRefs(e, 2)}>
         <div className="content">
         <h1 style={{width: 'clamp(32vw, 32vw, 991.92px)', textAlign: 'left'}}  dangerouslySetInnerHTML={{__html: `<strong>Metavest</strong> Website`}} ></h1>
-        <p style={{width: 'clamp(32vw, 32vw, 890.43px)', textAlign: 'left'}}  >Worked on metavest.app website and created bunch of pages at metavest.app</p>
+        <p style={{width: 'clamp(32vw, 32vw, 890.43px)', textAlign: 'left'}}  >Worked on metavest.app website, created bunch of pages and components with the care of responsive design. Mainly used Reactjs and Nextjs along with CSS and HTML, used Strapi for CMS and localization.</p>
         <div className="box">
-        <button style={{backgroundColor: '#3f4399', color: '#FFFFFF' }} ><span>Website </span></button>
+        <a href="https://metavest.app/"><button style={{backgroundColor: '#3f4399', color: '#FFFFFF' }} ><span>Website </span></button></a>
         </div>
         </div>
         <img src="/work/metavest.png" alt="Metavest App" />
         </section>
-        <section className="panel purple" ref={(e) => createPanelsRefs(e, 3)}>
-        <div className="content">
-        <h1 style={{color: '#ecf0f1',width: 'clamp(32vw, 32vw, 991.92px)', textAlign: 'left'}} dangerouslySetInnerHTML={{__html: `<strong>Mercedes</strong> Assistify App`}}></h1>
-        <p style={{color: '#ecf0f1',width: 'clamp(32vw, 32vw, 890.43px)', textAlign: 'left'}} >Worked on Danceflavors app for a year, created frontend for the app, took a part in designing and implementing the architecture of the backend.</p>
-        <div className="box">
-        <button><span>Github </span></button>
-        </div>
-        </div>
-        </section>
-        <section className="panel green" ref={(e) => createPanelsRefs(e, 4)}>
+        <section className="panel green" ref={(e) => createPanelsRefs(e, 3)}>
         <div className="content">
         <h1 style={{width: 'clamp(32vw, 32vw, 991.92px)', textAlign: 'left'}}  dangerouslySetInnerHTML={{__html: `<strong>DaiDay</strong> Mobile App`}}></h1>
-        <p style={{width: 'clamp(32vw, 32vw, 890.43px)', textAlign: 'left'}}  >Worked on Danceflavors app for a year, created frontend for the app, took a part in designing and implementing the architecture of the backend.</p>
+        <p style={{width: 'clamp(32vw, 32vw, 890.43px)', textAlign: 'left'}}  >Created my first solo Mobile app and published it on Google Play Store, even though it is not perfect i am proud of my work and that i learned it all by myself during University. Mainly used Flutter and Dart programming language, Hive and SQFLite for database, BLoC for state management.</p>
         <div className="box">
-        <button style={{backgroundColor: '#2f3640', color: '#44bd32' }} ><span>Github </span></button>
+        <a href="https://github.com/umutyesildal/daiday"><button style={{backgroundColor: '#2f3640', color: '#44bd32' }} ><span>Github </span></button></a>
         </div>
         </div>
         <img style={{}} src="/work/daiday.png" alt="DanceFlavors App" />
+        </section>
+        <section className="panel purple" ref={(e) => createPanelsRefs(e, 4)}>
+        <div className="content">
+        <h1 style={{color: '#2d3436',width: 'clamp(36vw, 36vw, 1100.92px)', textAlign: 'left'}} dangerouslySetInnerHTML={{__html: `<strong>Mercedes</strong> Assist App`}}></h1>
+        <p style={{color: '#2d3436',width: 'clamp(36vw, 36vw, 1100.92px)', textAlign: 'left'}} >During joint lecture between TAU and Mercedes Turkey, I had the chance to meet with executives and find a solution to a problem Mercedes is having. Assistify is focused on solving Mercedes car users problems via Mobile App.</p>
+        <div className="box">
+        <a href="https://github.com/umutyesildal/mercedes-assistify"> <button><span>Github </span></button></a>
+        </div>
+        </div>
+        <div style={{paddingLeft: '50px', alignItems: 'space-around'}} className="content">
+        <h1 style={{color: '#2d3436',width: 'clamp(36vw, 36vw, 1100.92px)', textAlign: 'left'}} dangerouslySetInnerHTML={{__html: `<strong>Sharify</strong> Mobile App`}}></h1>
+        <p style={{color: '#2d3436',width: 'clamp(36vw, 36vw, 1100.92px)', textAlign: 'left'}} >Sharify is focused on preventing the product and food waste by connecting people in need. Just join and create a card describing the item or food you are willing to give away or check out cards to find anything you need!</p>
+        <div className="box">
+        <a href="https://github.com/umutyesildal/sharify"><button><span>Github </span></button></a>
+        </div>
+        </div>
         </section>
         <section className="panel gray" ref={(e) => createPanelsRefs(e, 5)}>
           <div className="links" >
           <h1 style={{color: '#bae374'}} dangerouslySetInnerHTML={{__html: `<strong>More,</strong> checkout more at links below`}} ></h1>
           <div className="box2">
-        <button><span>Yesildal.me </span></button>
-        <button><span>Github </span></button>
-        <button><span>Github </span></button>
+        <a href="https://github.com/umutyesildal/yesildal.me"><button><span>Yesildal.me </span></button></a>
+        <a href="https://github.com/umutyesildal/Seppuku_NFT"><button><span>Seppuku NFT </span></button></a>
+        <a href="https://github.com/umutyesildal/coinTicker"><button><span>Coin Ticker </span></button></a>
         </div>
           </div>
         </section>
@@ -181,7 +188,7 @@ line-height: 115%;
 }
 
 .purple {
-  background-color: #436EA0;
+  background-color: #c8d6e5;
 }
 .green {
   background-color: #28a92b;
@@ -399,8 +406,8 @@ right: 0;
 
 
 .panel img {
-  text-align: center;
-  width: 30%;
+  object-fit: cover;
+  width: 35%;
 }
 
 body {

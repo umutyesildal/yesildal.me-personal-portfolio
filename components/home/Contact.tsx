@@ -48,11 +48,11 @@ export default function Contact() {
           font-family: Visby, -apple-system, BlinkMacSystemFont,
           "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
           "Segoe UI Emoji";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 1.5873vw;
-        line-height: 140%;
-        color: #ffffff;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.5873vw;
+          line-height: 140%;
+          color: #ffffff;
         }
 
         section .content2 img {
@@ -91,7 +91,7 @@ export default function Contact() {
         }
 
 
-        @media screen and (max-width: 992px) {
+        @media screen AND (max-width: 992px) {
           section {
             padding: 35px 22px;
             margin-top: 2vh;
@@ -119,39 +119,30 @@ export default function Contact() {
             margin-bottom: 32px;
           }
         }
-
-
-        @media screen AND (min-width: 526px) AND (max-width: 992px) {
+        @media only screen and (max-width: 526px) {
           section .content h2 {
             font-size: 35px;
           }
-
           section .content2 button {
             background: #2d3436;
             border-radius: 32px;
-            width: 35%;
+            width: 25%;
             height: 8.5vw;
             font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
-          font-style: normal;
-          font-weight: 300;
-          font-size: 3.5873vw;
-          line-height: 140%;
-          color: #ffffff;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 3.5873vw;
+            line-height: 140%;
+            color: #ffffff;
           }
-
           section .content p {
             font-size: 20px;
             line-height: 30px;
           }
         }
-      }
-      `}</style>
-      <style jsx global>{`
-        #section2 .content h2 strong {
-          font-weight: 500;
-        }
+
       `}</style>
     </>
   );
