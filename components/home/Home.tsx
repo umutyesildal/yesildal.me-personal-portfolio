@@ -1,4 +1,4 @@
-import AppPreview from 'components/visual/AppPreview';
+import ImagePreview from 'components/visual/AppPreview';
 import {useState, useEffect, useRef} from 'react';
 
 export default function Home() {
@@ -7,11 +7,9 @@ export default function Home() {
     subtitle: "I am a Software Developer focused on drifting with the wind of newly developed tech.<br/><br/> Jack of all trades, master of none, but oftentimes better than a master of one.",
     actionText: "See more <br/>socials",
   });
-
-  /// TODO: Add your photos to here
   return (
     <>
-      <div className={`intro ${''}`}>
+      <div className={`intro`}>
         <div className="content">
           <h1 className="text">{texts.title}</h1>
           <p
@@ -22,7 +20,7 @@ export default function Home() {
         </div>
         <div className={`preview-container ${'shown-preview'}`}>
           <div className='preview-inner'>
-            <AppPreview />
+            <ImagePreview />
           </div>
         </div>
       </div>
@@ -218,11 +216,7 @@ export default function Home() {
           top: calc(var(--scroll-page) * -250px);
         }
 
-        .preview-inner{
-          max-width: 20vw;
-        }
-
-        @media screen AND (min-width: 526px) {
+        @media screen AND (min-width: 992px) {
 
           .preview-container{
             transform: translateY(3vh);
@@ -262,7 +256,7 @@ export default function Home() {
           }
 
           .intro .content h1 {
-            font-size: 12vw;
+            font-size: 9vw;
             width: 100%;
             line-height: 120%;
             font-weight: 500;
@@ -272,7 +266,7 @@ export default function Home() {
           }
 
           .intro .content p {
-            font-size: 4vw;
+            font-size: 3.5vw;
             line-height: 128%;
             width: 100%;
             padding: 0 15px;
@@ -322,7 +316,7 @@ export default function Home() {
           }
 
           .preview-inner{
-            max-width: 64vw;
+            max-width: 75%;
             border-radius: 10vw;
           }
         }
@@ -415,6 +409,7 @@ export default function Home() {
             .intro {
               padding-left: 4vw;
               padding-right: 4vw;
+              flex-direction: column;
             }
             .intro .content .action{
               padding-left: 4vw;
