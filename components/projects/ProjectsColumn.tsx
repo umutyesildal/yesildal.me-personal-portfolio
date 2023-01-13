@@ -116,7 +116,7 @@ assets:     [
         font-weight: 300;
         font-size: 15px;
         line-height: 20px;
-        color: #7a7a85;
+        color: #61616a;
         margin-bottom: 25px;
 
       }  

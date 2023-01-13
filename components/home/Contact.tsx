@@ -121,7 +121,7 @@ export default function Contact() {
         }
         @media only screen and (max-width: 526px) {
           section .content h2 {
-            font-size: 35px;
+            font-size: 29px;
           }
           section .content2 button {
             background: #2d3436;
@@ -138,8 +138,8 @@ export default function Contact() {
             color: #ffffff;
           }
           section .content p {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 15px;
+            line-height: 20px;
           }
         }
 
