@@ -3,13 +3,14 @@ import { useEffect, useState } from "react";
 import CommonHead from "../components/shared/commonHead";
 import Home from "components/home/Home";
 import Expertise from "components/home/Expertise";
-import parse from "node-html-parser";
 import Navigation from "components/Navigation";
 import Experience from "components/home/Experience";
 import Contact from "components/home/Contact";
 import Work from "components/work/Work";
 import { BrowserView, MobileView } from "react-device-detect";
 import Projects from "components/home/Projects";
+import Head from "next/head";
+import parse from 'html-react-parser';
 
 
 export default function Index({
@@ -23,17 +24,70 @@ export default function Index({
     head: null,
   });
 
-  const headElements = () => {
-    if(texts.head) {
-      try {
-        return parse(texts.head);
-      } catch (error) { 
-        return null;
+  const head =  `<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://www.yesildal.me/",
+    "name": "Umut Yunus Yeşildal | Software Developer",
+    "description": "Portfolio website of Umut Yunus Yeşildal",
+    "alternateName": "yesildal.me",
+    "logo": "https://yesildal.me/favicon.ico",
+    "image": "https://www.yesildal.me/homeImage2.png",
+    "founder": [
+      {
+          "@type": "Person",
+          "name": "Umut Yunus Yeşildal",
+          "url": "https://twitter.com/umutyyesildal",
+          "jobTitle": "Founder"
       }
-    } else {
-      return null;
+  ],
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://yesildal.me",
+            "name": "Home"
+          }
+        }
+      ]
+    },
+    "mainEntity": {
+      "@type": "WebPage",
+      "url": "https://yesildal.me",
+      "name": "Umut Yeşildal",
+      "image": "https://www.yesildal.me/homeImage2.png",
+      "description": "Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Istanbul, meet Umut Yunus Yeşildal",
+      "mainEntityOfPage": {
+          "@type": "Organization",
+          "name": "Umut Yeşildal",
+          "image": "https://www.yesildal.me/homeImage2.png",
+          "description": "Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Istanbul, meet Umut Yunus Yeşildal",
+          "url": "https://yesildal.me",
+      }
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@yesildal.me",
+      "contactType": "customer service"
     }
-  };
+  }
+  </script>
+  <meta property="og:url" content="https://yesildal.me" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Umut Yesildal " />
+  <meta property="og:image" content="https://www.yesildal.me/homeImage2.png" />
+  <meta property="og:description" content="Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Istanbul, meet Umut Yunus Yeşildal" />
+  <meta property="og:site_name" content="Umut Yesildal" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@umutyyesildal" />
+  <meta name="twitter:title" content="Umut Yunus Yeşildal | Software Developer" />
+  <meta name="twitter:description" content="Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Istanbul, meet Umut Yunus Yeşildal" />
+  <meta name="twitter:image" content="https://www.yesildal.me/homeImage2.png" />
+  <meta name="twitter:creator" content="@umutyyesildal"/>`
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -52,9 +106,11 @@ export default function Index({
     }, 50);
   });
 
+  const parseHead = parse(head)
+
   return (
     <>
-      <CommonHead>
+      <Head>
         <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KMD99G5"></script>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,9 +121,8 @@ export default function Index({
           content={texts.description}
         />
         <link rel="icon" href="/favicon.ico" />
-        {headElements()}
-      </CommonHead>
-
+        {parseHead}
+      </Head>
       <Navigation />
       <main>
         <div id="smooth-wrapper">
