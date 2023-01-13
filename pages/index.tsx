@@ -79,14 +79,14 @@ export default function Index({
   <meta property="og:url" content="https://yesildal.me" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Umut Yesildal " />
-  <meta property="og:image" content="https://www.yesildal.me/homeImage2.png" />
+  <meta property="og:image" content="https://www.yesildal.me/ogImage.png" />
   <meta property="og:description" content="Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Istanbul, meet Umut Yunus Yeşildal" />
   <meta property="og:site_name" content="Umut Yesildal" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@umutyyesildal" />
   <meta name="twitter:title" content="Umut Yunus Yeşildal | Software Developer" />
   <meta name="twitter:description" content="Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Istanbul, meet Umut Yunus Yeşildal" />
-  <meta name="twitter:image" content="https://www.yesildal.me/homeImage2.png" />
+  <meta name="twitter:image" content="https://www.yesildal.me/ogImage.png" />
   <meta name="twitter:creator" content="@umutyyesildal"/>`
 
   useEffect(() => {
