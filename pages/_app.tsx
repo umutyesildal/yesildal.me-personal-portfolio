@@ -1,11 +1,12 @@
 import "../styles/globals.css";
-import { createContext, useEffect } from "react";
-import TagManager from "react-gtm-module";
 import App from "next/app";
-import ua from 'express-useragent';
+import 'react-notion-x/src/styles.css'
+import { createContext, useEffect } from "react";
 import { RequestContext as RequestContextType } from "types/requestContext";
 
-
+let requestContext = {} as Partial<RequestContextType>;
+export const RequestContext = createContext<Partial<RequestContextType>>({});
+const RequestContextProvider = RequestContext.Provider;
 
 type AppRootProps = {
   Component:any,
@@ -19,6 +20,7 @@ function AppRoot(props:AppRootProps) {
   return <Component {...pageProps} />
 
 }
+
 
 AppRoot.getInitialProps = async (ctx) => {
   const appProps = await App.getInitialProps(ctx);

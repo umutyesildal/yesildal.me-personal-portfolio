@@ -29,7 +29,7 @@ export default function Hero(props){
             }
 
             .container h2 {
-                font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+                font-family: Visby, -apple-system, BlinkMacSystemFont,
                 "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
                 "Segoe UI Emoji";
                 font-style: normal;
@@ -45,10 +45,10 @@ export default function Hero(props){
             }
 
             .container h5 {
-                font-family: TWK Everett,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+                font-family: Visby,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
                 font-style: normal;
                 font-weight: 400;
-                color: #234D63;
+                color: #2d3436;
                 margin-top: 2vw;
                 font-size: min(25px,3.6vw);
                 z-index: 1;

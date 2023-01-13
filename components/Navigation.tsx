@@ -1,8 +1,8 @@
-import Link from "next/link";
 import { useEffect, useState, useRef} from "react";
 import { useRouter } from "next/router";
 import { downloadApp } from "../utils/pageUtils";
 import LanguageLink from "./shared/LanguageLink";
+import { Link } from "react-scroll";
 
 export default function Navigation({
   isSticky = false,
@@ -75,37 +75,38 @@ export default function Navigation({
       >
         <a className="home-logo" href="/">
           {
-            !isDark ? <img className="white" src="./logo_white.svg" alt="logo" />
-            : <img className="white" src="/logo_primary.svg" alt="logo" />
+            !isDark ? <img className="white" src="/icon.png" alt="logo" />
+            : <img className="white" src="/icon.png" alt="logo" />
           }
-          <img className="colored" src="/logo_colored_2.svg" alt="logo colored" />
+          <img className="colored" src="/icon.png" alt="logo colored" />
         </a>
      
         <ul className="menu" >
+          
           <li className="secondary">
-            <LanguageLink href={'security'}>
-              home
-            </LanguageLink>
+          <Link activeClass="active" smooth spy to="home">
+                home
+              </Link>
           </li>
           <li className="secondary">
-            <LanguageLink href={'security'}>
-            expertise
-            </LanguageLink>
+          <Link activeClass="active" smooth spy to="expertise">
+                expertise
+            </Link>
           </li>
           <li className="secondary">
-            <LanguageLink href={'security'}>
-              work
-            </LanguageLink>
+          <Link activeClass="active" smooth spy to="work">
+                work
+            </Link>
           </li>
           <li className="secondary">
-            <LanguageLink href={'security'}>
-              experience
-            </LanguageLink>
+          <Link activeClass="active" smooth spy to="experience">
+                experience
+            </Link>
           </li>
           <li className="secondary">
-            <LanguageLink href={'security'}>
-              contact
-            </LanguageLink>
+          <Link activeClass="active" smooth spy to="contact">
+                contact
+            </Link>
           </li>
         </ul>
         <div className={`mobile-menu ${state.isActive ? "opened" : "closed"}`}>
@@ -114,14 +115,33 @@ export default function Navigation({
             aria-label="menu button"
             className="menu-button"
           ></button>
-          <ul>
-            <li className="secondary">
-              <LanguageLink href={'security'}>
-                {security}
-              </LanguageLink>
-            </li>
-            <li className="filler"></li>
-          </ul>
+        <ul >
+          <li className="secondary">
+          <Link activeClass="active" smooth spy to="home">
+                home
+              </Link>
+          </li>
+          <li className="secondary">
+          <Link activeClass="active" smooth spy to="expertise">
+                expertise
+            </Link>
+          </li>
+          <li className="secondary">
+          <Link activeClass="active" smooth spy to="work">
+                work
+            </Link>
+          </li>
+          <li className="secondary">
+          <Link activeClass="active" smooth spy to="experience">
+                experience
+            </Link>
+          </li>
+          <li className="secondary">
+          <Link activeClass="active" smooth spy to="contact">
+                contact
+            </Link>
+          </li>
+        </ul>
         </div>
       </nav>
       <style jsx global>{`
@@ -182,7 +202,7 @@ export default function Navigation({
         }
 
         nav.sticky.dim ul li.secondary a, nav.sticky.dim ul li.primary p {
-          color: var(--title-color);
+          color: #2d3436;
         }
 
         nav .mobile-menu ul li p {
@@ -195,7 +215,7 @@ export default function Navigation({
         nav ul li.secondary.language-select button {
           border: none;
           background: none;
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -221,7 +241,7 @@ export default function Navigation({
           left: 50%;
           transform: translateX(-50%) scale(0.5);
           transition: 0.15s all;
-          box-shadow: 0 3px 12px #234d6322;
+          box-shadow: 0 3px 12px #2d343622;
         }
         nav ul li.secondary.language-select div[data-open=true] {
           position: absolute;
@@ -247,7 +267,7 @@ export default function Navigation({
         }
 
         nav ul li.secondary.language-select div ul li button {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           cursor: pointer;
@@ -292,7 +312,7 @@ export default function Navigation({
         }
 
         nav ul li.secondary a, nav ul li.primary p {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -345,7 +365,7 @@ export default function Navigation({
         }
 
         nav ul li div ul li button p{
-          color: #234d63;
+          color: #2d3436;
         }
 
         @media screen and (max-width: 992px) {
@@ -437,8 +457,7 @@ export default function Navigation({
             background: transparent;
             background-repeat: no-repeat;
             background-position: center center;
-            transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
-            transform: rotate(0deg);
+            color: #bae374;
           }
 
           nav .mobile-menu .primary button {
@@ -544,7 +563,7 @@ export default function Navigation({
           nav .mobile-menu ul li.secondary.language-select select {
             border: none;
             background: none;
-            font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+            font-family: Visby, -apple-system, BlinkMacSystemFont,
                 "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
                 "Segoe UI Emoji";
             font-style: normal;
@@ -585,7 +604,7 @@ export default function Navigation({
         nav.dark-style ul li.secondary a, nav.dark-style ul li.secondary a,
         nav.dark-style ul li.primary button p
         {
-          color: #234D63;
+          color: #2d3436;
         }
 
         nav.dark-style.sticky ul li.primary button p{

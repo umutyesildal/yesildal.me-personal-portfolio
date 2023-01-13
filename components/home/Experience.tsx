@@ -3,9 +3,9 @@ import { useState } from "react";
 
 export default function Experience() {
   const [texts] = useState({
-    title: `<strong>Experience,</strong> daha önce çalıştığım işler`,
+    title: `<strong>Experience,</strong> where i worked before`,
     subtitle:
-      `Bu şirketlerde çalıştım ve şu görevleri aldım şunları bunları yaptım`,
+      `What i have done before, where i worked before and which position i was before`,
   });
   
   return (
@@ -16,15 +16,19 @@ export default function Experience() {
             dangerouslySetInnerHTML={{ __html: texts.title }}
           ></h2>
           <p dangerouslySetInnerHTML={{ __html: texts.subtitle }}></p>
+          <div className="accordion" >
           <SimpleAccordion/>
+          </div>
         </div>
       </section>
       <style jsx>{`
         section {
           position: relative;
           display: flex;
-          flex-direction: row;
-          padding: 0 12.103vw 2vw 10.317vw;
+          flex-direction: column;
+          padding: 4vw 5.103vw 2vw 10.317vw;
+          background-color: #bae374;
+
         }
 
         section .media {
@@ -38,30 +42,32 @@ export default function Experience() {
           display: flex;
           flex-direction: column;
         }
-
+        section .accordion{
+          width: 100%;
+        }
 
         section .content h2 {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: 3.43391vw;
           line-height: 122%;
-          color: #234d63;
+          color: #2d3436;
           margin-bottom: 2.513vw;
           animation-delay: 0s;
         }
 
         section .content p {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: 1.5873vw;
           line-height: 140%;
-          color: #234d63;
+          color: #2d3436;
           margin-bottom: 2.513vw;
           animation-delay: 0.3s;
         }
@@ -112,7 +118,7 @@ export default function Experience() {
         }
 
         section .content ul span {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -125,7 +131,6 @@ export default function Experience() {
         @media screen and (max-width: 992px) {
           section {
             padding: 35px 22px;
-            margin-top: 2vh;
           }
 
           section > .media {

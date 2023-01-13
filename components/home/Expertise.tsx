@@ -2,15 +2,21 @@ import { useState } from "react";
 
 export default function Expertise() {
   const [texts] = useState({
-    title: `<strong>Expertise,</strong> hangi konular üzerinde çalıştım`,
+    title: `<strong>Expertise,</strong> what i worked on before.`,
     subtitle:
-      `Daha önce şu konularda proje geliştirdim ve bu konularda çlaıştım!`,
+      `I have worked on bunch of projects and technologies but these are the topics i am most skilled at.`,
+      item1Title:
+      `Mobile Development`,
+      item2Title:
+      `Front-End Development`,
+      item3Title:
+      `Smart Contract Newbie`,
     item1:
-      `quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum `,
+      `Worked on mobile development with Flutter framework and dart programming language.`,
     item2:
-      `quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum `,
+      `Created beautiful UI for both mobile and web, mostly used React framework along with HTML-CSS.`,
     item3:
-      `quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum `,
+      `Even though this is an expertise page, i am passionate about the blockchain and smart contracts. Hopefully i will be deleting the Newbie tag from the title soon.`,
   });
   
   return (
@@ -25,18 +31,20 @@ export default function Expertise() {
 
           <ul>
             <li className="animation-element">
-              <img src="/icon_1.svg" alt="Find the best opportunities icon"/>
+              <img src="/icon/home.png"/>
+              <h4>{texts.item1Title}</h4>
               <span>{texts.item1}</span>
             </li>
             <li className="animation-element">
-              <img src="/icon_2.svg" alt="Boost your rewards icon" />
+              <img src="/icon/user.png"/>
+              <h4>{texts.item2Title}</h4>
               <span>{texts.item2}</span>
             </li>
             <li className="animation-element">
               <img
-                src="/icon_3.svg"
-                alt="Be a part of Metavest DeFi community icon"
+                src="/icon/sack-dollar.png"
               />
+              <h4>{texts.item3Title}</h4>
               <span>{texts.item3}</span>
             </li>
           </ul>
@@ -47,7 +55,9 @@ export default function Expertise() {
           position: relative;
           display: flex;
           flex-direction: row;
-          padding: 0 12.103vw 2vw 10.317vw;
+          padding: 4vw 5.103vw 2vw 10.317vw;
+          z-index: 10;
+
         }
 
         section .media {
@@ -68,30 +78,28 @@ export default function Expertise() {
 
         section .content h2 {
           opacity: 0;
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: 3.43391vw;
           line-height: 122%;
-          color: #234d63;
-          width: 29.49735vw;
+          color: #2d3436;
           margin-bottom: 2.513vw;
           animation-delay: 0s;
         }
 
         section .content p {
           opacity: 0;
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: 1.5873vw;
           line-height: 140%;
-          color: #234d63;
-          width: 29.2328vw;
+          color: #2d3436;
           margin-bottom: 2.513vw;
           animation-delay: 0.3s;
         }
@@ -138,12 +146,11 @@ export default function Expertise() {
 
         section .content ul li img {
           width: 1.917vw;
-          height: 1.322vw;
           margin-bottom: 1.851vw;
         }
 
         section .content ul span {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -151,6 +158,7 @@ export default function Expertise() {
           font-size: 1.32275vw;
           line-height: 130%;
           color: #a0a0aa;
+          padding-top: 10px;
         }
 
         @media screen and (max-width: 992px) {
@@ -202,7 +210,7 @@ export default function Expertise() {
           section .content > ul li {
             width: 100%;
             margin-right: 0;
-            flex-direction: row-reverse;
+            flex-direction: column;
             justify-content: space-between;
             padding: 17px 0 28px 0;
             border-top: 1px solid #eeeef2;
@@ -211,8 +219,17 @@ export default function Expertise() {
           section .content > ul li span {
             font-size: 15px;
             line-height: 20px;
-            width: 70%;
           }
+
+          section .content > ul li img {
+            display: none;
+          }
+
+          section .content > ul li h4 {
+            font-size: 15px;
+            line-height: 20px;
+          }
+
         }
 
         @media screen AND (max-width: 526px) {

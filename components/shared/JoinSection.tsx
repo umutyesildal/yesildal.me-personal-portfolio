@@ -16,7 +16,7 @@ function JoinSection(props:JoinSectionProps){
         </a>
       </div>
       <div className='separator'></div>
-      <img src="/img/image-preview.png" alt="Join Metavest" />
+      <img src="/img/image-preview.png"/>
     </div>
     <style jsx>{`
       .container {
@@ -30,7 +30,7 @@ function JoinSection(props:JoinSectionProps){
         padding-right: 14vw;
       }
       h2 {
-        font-family: TWK Everett,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+        font-family: Visby,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
         font-style: normal;
         font-weight: 700;
         font-size: 2vw;
@@ -80,7 +80,7 @@ function JoinSection(props:JoinSectionProps){
           margin-bottom: -4vh;
         }
         h2 {
-          font-family: TWK Everett,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+          font-family: Visby,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
           font-style: normal;
           font-weight: 700;
           font-size: 7vw;

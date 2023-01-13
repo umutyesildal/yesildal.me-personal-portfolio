@@ -1,18 +1,15 @@
-import AppPreview from 'components/visual/AppPreview';
+import ImagePreview from 'components/visual/AppPreview';
 import {useState, useEffect, useRef} from 'react';
 
 export default function Home() {
   const [texts] = useState({
-    title: "Name Surname",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
-    actionText: "Link to <strong>somewhere</strong>",
-    actionButtonText: "Link",
+    title: "Umut Yunus Yeşildal",
+    subtitle: "I am a Software Developer focused on drifting with the wind of newly developed tech.<br/><br/> Jack of all trades, master of none, but oftentimes better than a master of one.",
+    actionText: "See more <br/>socials",
   });
-
-  /// TODO: Add your photos to here
   return (
     <>
-      <div className={`intro ${''}`}>
+      <div className={`intro`}>
         <div className="content">
           <h1 className="text">{texts.title}</h1>
           <p
@@ -20,19 +17,10 @@ export default function Home() {
             style={{ opacity: 0 }}
             dangerouslySetInnerHTML={{ __html: texts.subtitle }}
           ></p>
-          <div className="action">
-            <span dangerouslySetInnerHTML={{ __html: texts.actionText }}></span>
-            <a
-              className="primary-button"
-              href="https://metave.st/download"
-              dangerouslySetInnerHTML={{ __html: texts.actionButtonText }}
-            ></a>
-          </div>
-
         </div>
         <div className={`preview-container ${'shown-preview'}`}>
           <div className='preview-inner'>
-            <AppPreview />
+            <ImagePreview />
           </div>
         </div>
       </div>
@@ -42,13 +30,7 @@ export default function Home() {
           position: relative;
           display: flex;
           padding: 12.235vw 12.103vw 10.978vw;
-          background: linear-gradient(
-            149.15deg,
-            #1a5570 28.8%,
-            #265f7f 45.29%,
-            #0f2943 82.96%
-          );
-          z-index: 9;
+          background: #2d3436;
           padding-right: 0;
         }
 
@@ -75,14 +57,14 @@ export default function Home() {
 
         .intro .content h1 {
           opacity: 0;
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
           font-weight: 500;
           font-size: clamp(5.0264vw, 5.0264vw, 154.5px);
           line-height: 115%;
-          color: #8cedfe;
+          color: #bae374;
           color: color(display-p3 0.549 0.929 0.996);
           width: clamp(32vw, 32vw, 991.92px);
           margin-bottom: 1.435vw;
@@ -92,7 +74,7 @@ export default function Home() {
 
         .intro .content p {
           opacity: 0;
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -112,8 +94,6 @@ export default function Home() {
         .intro .content .action {
           opacity: 0;
           padding: 1.19047vw 1.32275vw 1.32275vw 1.32275vw;
-          border: 0.8px solid #8cedfe;
-          border-color: color(display-p3 0.549 0.929 0.996);
           box-sizing: border-box;
           border-radius: 0.92592vw;
           display: flex;
@@ -123,11 +103,11 @@ export default function Home() {
           width: clamp(26.5873vw, 26.5873vw, 817.25px);
           animation: fadeIn 1.2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
           animation-delay: 2.1s;
-          background: rgba(35, 77, 99, 0.58);
+          background: #0a3d62;
         }
 
         .intro .content .action span {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;
@@ -236,14 +216,10 @@ export default function Home() {
           top: calc(var(--scroll-page) * -250px);
         }
 
-        .preview-inner{
-          max-width: 20vw;
-        }
-
-        @media screen AND (min-width: 526px) {
+        @media screen AND (min-width: 992px) {
 
           .preview-container{
-            transform: translateY(10vh);
+            transform: translateY(3vh);
           }
           .shown-preview{
             transform: translateY(0);
@@ -280,7 +256,7 @@ export default function Home() {
           }
 
           .intro .content h1 {
-            font-size: 13vw;
+            font-size: 9vw;
             width: 100%;
             line-height: 120%;
             font-weight: 500;
@@ -290,7 +266,7 @@ export default function Home() {
           }
 
           .intro .content p {
-            font-size: 15.52px;
+            font-size: 3.5vw;
             line-height: 128%;
             width: 100%;
             padding: 0 15px;
@@ -340,40 +316,10 @@ export default function Home() {
           }
 
           .preview-inner{
-            max-width: 64vw;
+            max-width: 75%;
             border-radius: 10vw;
           }
         }
-
-        
-      
-        @media screen AND (min-width: 526px) AND (max-width: 992px) {
-          .intro .content h1 {
-            font-size: 64px;
-          }
-
-          .intro .content p {
-            font-size: 24px;
-          }
-
-          .intro .content .action span {
-            font-size: 20px;
-          }
-
-          .intro .content .action span strong {
-            font-size: 20px;
-          }
-        }
-        @media screen AND (min-width: 993px) AND (max-width: 1199px) {
-          .intro .media.mobile {
-            display: none;
-          }
-          .intro .content .action {
-            width: 29vw;
-          }
-        }
-
-      
 
         @media screen AND (min-width: 1200px) {
 
@@ -451,35 +397,6 @@ export default function Home() {
           }
         }
 
-        @media screen AND (max-width: 375px) {
-          .intro {
-            padding-left: 4vw;
-            padding-right: 4vw;
-          }
-          .intro .content .action{
-            padding-left: 4vw;
-            padding-right: 4vw;
-          }
-
-          .intro .content .action span {
-            font-size: 4vw;
-            margin-right: 8px;
-          }
-
-          .intro .content .action span strong {
-            font-size: 3.5vw;
-          }
-
-          .intro .content .action .primary-button {
-            font-size: 3.4vw;
-          }
-
-          .intro.has-qr .content .qr-container {
-            display: none;
-          }
-          
-        }
-
         @media screen AND (max-width: 526px) {
             .intro .content .action {
               position: fixed;
@@ -488,23 +405,59 @@ export default function Home() {
               right: 3vw;
               width: 94vw;
             }
+
+            .intro {
+              padding-left: 4vw;
+              padding-right: 4vw;
+              flex-direction: column;
+            }
+            .intro .content .action{
+              padding-left: 4vw;
+              padding-right: 4vw;
+            }
+
+            .intro .content h1 {
+              font-size: 12vw;
+              width: 100%;
+              line-height: 120%;
+              font-weight: 500;
+              text-align: center;
+              text-shadow: 0 0 24px #1e4b6b88;
+              margin-bottom:16px;
+            }
+  
+            .intro .content p {
+              font-size: 4vw;
+              line-height: 128%;
+              width: 100%;
+              padding: 0 15px;
+              font-weight: 300;
+              text-align: center;
+            }
+  
+            .intro .content .action span {
+              font-size: 4vw;
+              margin-right: 8px;
+            }
+  
+            .intro .content .action span strong {
+              font-size: 3.5vw;
+            }
+  
+            .intro .content .action .primary-button {
+              font-size: 3.4vw;
+            }
+  
+            .intro.has-qr .content .qr-container {
+              display: none;
+            }
+            
           }
 
-        @media screen AND (min-width: 1200px) {
-          .preview-container{
-            transform: translateY(4vh);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .preview-inner{
-            max-width: min(18vw, 32vh);
-          }
-        }
       `}</style>
       <style jsx global>{`
         .intro .content .action span strong {
-          font-family: TWK Everett, -apple-system, BlinkMacSystemFont,
+          font-family: Visby, -apple-system, BlinkMacSystemFont,
             "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
             "Segoe UI Emoji";
           font-style: normal;

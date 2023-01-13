@@ -1,25 +1,25 @@
 import CommonFooter from "../components/CommonFooter";
 import { useEffect, useState } from "react";
 import CommonHead from "../components/shared/commonHead";
-import ua from 'express-useragent';
-import CookieConsent from "components/CookieConsent";
-import Work from "components/home/Work";
 import Home from "components/home/Home";
 import Expertise from "components/home/Expertise";
 import parse from "node-html-parser";
 import Navigation from "components/Navigation";
 import Experience from "components/home/Experience";
 import Contact from "components/home/Contact";
+import Work from "components/work/Work";
+import { BrowserView, MobileView } from "react-device-detect";
+import Projects from "components/home/Projects";
 
 
 export default function Index({
   cookie,
   qrLink,
-  isMobile
+
 }) {
   const [texts] = useState({
-    title: `Boost Your Crypto Earnings | Unbanked future`,
-    description: `The effortless way of investing with crypto. Boost your crypto earnings with competitive DeFi-backed interest rates while investing in the future of finance.`,
+    title: `Umut Yeşildal`,
+    description: ``,
     head: null,
   });
 
@@ -45,7 +45,6 @@ export default function Index({
         }
       });
     });
-    observer.observe(document.querySelector("#section1"));
     observer.observe(document.querySelector("#section2"));
     setTimeout(function () {
       document.querySelector(".vl-leaderboard") &&
@@ -53,7 +52,6 @@ export default function Index({
     }, 50);
   });
 
- 
   return (
     <>
       <CommonHead>
@@ -61,7 +59,7 @@ export default function Index({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>Metavest | {texts.title}</title>
+        <title>{texts.title}</title>
         <meta
           name="description"
           content={texts.description}
@@ -74,16 +72,22 @@ export default function Index({
       <main>
         <div id="smooth-wrapper">
           <div id="smooth-content">
-            <Home/>
-            <Expertise/>
-            <Work/>
-            <Experience/>
-            <Contact/>
+            <section id="home"><Home/></section>
+            <section id="expertise"><Expertise/></section>
+            <section id="work">
+            <BrowserView>
+              <Work/>
+            </BrowserView>
+            <MobileView>
+              <Projects/>
+            </MobileView>
+            </section>
+            <section id="experience"><Experience/></section>
+            <section id="contact"><Contact/></section>
           </div>
         </div>
       </main>
       <CommonFooter />
-      <CookieConsent {...cookie} />
       <div
         id="popup-trigger"
         data-vl-widget="popupTrigger"
