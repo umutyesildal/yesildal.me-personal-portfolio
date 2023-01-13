@@ -1,10 +1,11 @@
-import ImagePreview from 'components/visual/AppPreview';
-import {useState, useEffect, useRef} from 'react';
+import ImagePreview from "components/visual/AppPreview";
+import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
   const [texts] = useState({
     title: "Umut Yunus Yeşildal",
-    subtitle: "I am a Software Developer focused on drifting with the wind of newly developed tech.<br/><br/> Jack of all trades, master of none, but oftentimes better than a master of one.",
+    subtitle:
+      "I am a Software Developer focused on drifting with the wind of newly developed tech.<br/><br/> Jack of all trades, master of none, but oftentimes better than a master of one.",
     actionText: "See more <br/>socials",
   });
   return (
@@ -18,8 +19,8 @@ export default function Home() {
             dangerouslySetInnerHTML={{ __html: texts.subtitle }}
           ></p>
         </div>
-        <div className={`preview-container ${'shown-preview'}`}>
-          <div className='preview-inner'>
+        <div className={`preview-container ${"shown-preview"}`}>
+          <div className="preview-inner">
             <ImagePreview />
           </div>
         </div>
@@ -57,9 +58,8 @@ export default function Home() {
 
         .intro .content h1 {
           opacity: 0;
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 500;
           font-size: clamp(5.0264vw, 5.0264vw, 154.5px);
@@ -74,9 +74,8 @@ export default function Home() {
 
         .intro .content p {
           opacity: 0;
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: clamp(1.521164vw, 1.521164vw, 46.76px);
@@ -87,7 +86,7 @@ export default function Home() {
           animation-delay: 1.8s;
         }
 
-        .intro.has-qr .content .action{
+        .intro.has-qr .content .action {
           display: none;
         }
 
@@ -107,9 +106,8 @@ export default function Home() {
         }
 
         .intro .content .action span {
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: clamp(1.25661vw, 1.25661vw, 38.63px);
@@ -132,11 +130,9 @@ export default function Home() {
           opacity: 0;
         }
 
-        .intro.has-qr .content .qr-container.attention-shown{
+        .intro.has-qr .content .qr-container.attention-shown {
           transform: scale(1.2);
         }
-
-       
 
         .intro.has-qr .content .qr-container .attention {
           position: absolute;
@@ -153,15 +149,15 @@ export default function Home() {
           box-shadow: #00000088 0 0 24px;
         }
 
-        .intro.has-qr .content .qr-container.attention-shown .attention{
+        .intro.has-qr .content .qr-container.attention-shown .attention {
           opacity: 1;
         }
 
-        .intro.has-qr .content .qr-container.shown{
+        .intro.has-qr .content .qr-container.shown {
           opacity: 1;
         }
 
-        .intro.has-qr .content .qr-container .qr-intermediate-container{
+        .intro.has-qr .content .qr-container .qr-intermediate-container {
           min-width: 112px;
           height: 112px;
           position: relative;
@@ -179,7 +175,6 @@ export default function Home() {
           height: 100px;
         }
 
-
         .intro.has-qr .content .qr-container .description {
           margin-left: 20px;
           font-weight: 700;
@@ -194,10 +189,9 @@ export default function Home() {
           width: 40px;
           height: 40px;
           z-index: 1;
-
         }
 
-        .preview-container{
+        .preview-container {
           flex-grow: 1;
           z-index: 0;
           opacity: 0;
@@ -206,10 +200,9 @@ export default function Home() {
           align-items: center;
           justify-content: center;
           transition: 1s ease;
-
         }
 
-        .shown-preview{
+        .shown-preview {
           opacity: 1;
           transform: translateY(-46vh);
           position: relative;
@@ -217,11 +210,10 @@ export default function Home() {
         }
 
         @media screen AND (min-width: 992px) {
-
-          .preview-container{
+          .preview-container {
             transform: translateY(3vh);
           }
-          .shown-preview{
+          .shown-preview {
             transform: translateY(0);
             top: calc(var(--scroll-page) * -100px);
           }
@@ -240,7 +232,7 @@ export default function Home() {
             flex-direction: column;
           }
 
-          .intro.has-qr .content .qr-container{
+          .intro.has-qr .content .qr-container {
             display: none;
           }
 
@@ -262,7 +254,7 @@ export default function Home() {
             font-weight: 500;
             text-align: center;
             text-shadow: 0 0 24px #1e4b6b88;
-            margin-bottom:16px;
+            margin-bottom: 16px;
           }
 
           .intro .content p {
@@ -282,7 +274,6 @@ export default function Home() {
             bottom: 8px;
             border-radius: 11.5274px;
             padding: 14px 16px 16px 16px;
-            
           }
 
           .intro .content .action span {
@@ -315,15 +306,14 @@ export default function Home() {
             height: auto;
           }
 
-          .preview-inner{
+          .preview-inner {
             max-width: 75%;
             border-radius: 10vw;
           }
         }
 
         @media screen AND (min-width: 1200px) {
-
-          .intro.has-qr .content .qr-container .qr-intermediate-container{
+          .intro.has-qr .content .qr-container .qr-intermediate-container {
             min-width: 140px;
             height: 140px;
             position: relative;
@@ -343,7 +333,6 @@ export default function Home() {
             width: 54px;
             height: 54px;
             z-index: 1;
-
           }
         }
 
@@ -372,7 +361,7 @@ export default function Home() {
             font-size: 1.005vw;
           }
 
-          .intro.has-qr .content .qr-container .qr-intermediate-container{
+          .intro.has-qr .content .qr-container .qr-intermediate-container {
             min-width: 172px;
             height: 172px;
             position: relative;
@@ -393,80 +382,75 @@ export default function Home() {
             width: 64px;
             height: 64px;
             z-index: 1;
-
           }
         }
 
         @media screen AND (max-width: 526px) {
-            .intro .content .action {
-              position: fixed;
-              bottom: 2vh;
-              left: 3vw;
-              right: 3vw;
-              width: 94vw;
-            }
-
-            .intro {
-              padding-left: 4vw;
-              padding-right: 4vw;
-              flex-direction: column;
-            }
-            .intro .content .action{
-              padding-left: 4vw;
-              padding-right: 4vw;
-            }
-
-            .intro .content h1 {
-              font-size: 12vw;
-              width: 100%;
-              line-height: 120%;
-              font-weight: 500;
-              text-align: center;
-              text-shadow: 0 0 24px #1e4b6b88;
-              margin-bottom:16px;
-            }
-  
-            .intro .content p {
-              font-size: 4vw;
-              line-height: 128%;
-              width: 100%;
-              padding: 0 15px;
-              font-weight: 300;
-              text-align: center;
-            }
-  
-            .intro .content .action span {
-              font-size: 4vw;
-              margin-right: 8px;
-            }
-  
-            .intro .content .action span strong {
-              font-size: 3.5vw;
-            }
-  
-            .intro .content .action .primary-button {
-              font-size: 3.4vw;
-            }
-  
-            .intro.has-qr .content .qr-container {
-              display: none;
-            }
-            
+          .intro .content .action {
+            position: fixed;
+            bottom: 2vh;
+            left: 3vw;
+            right: 3vw;
+            width: 94vw;
           }
 
+          .intro {
+            padding-left: 4vw;
+            padding-right: 4vw;
+            flex-direction: column;
+          }
+          .intro .content .action {
+            padding-left: 4vw;
+            padding-right: 4vw;
+          }
+
+          .intro .content h1 {
+            font-size: 12vw;
+            width: 100%;
+            line-height: 120%;
+            font-weight: 500;
+            text-align: center;
+            text-shadow: 0 0 24px #1e4b6b88;
+            margin-bottom: 16px;
+          }
+
+          .intro .content p {
+            font-size: 4vw;
+            line-height: 128%;
+            width: 100%;
+            padding: 0 15px;
+            font-weight: 300;
+            text-align: center;
+          }
+
+          .intro .content .action span {
+            font-size: 4vw;
+            margin-right: 8px;
+          }
+
+          .intro .content .action span strong {
+            font-size: 3.5vw;
+          }
+
+          .intro .content .action .primary-button {
+            font-size: 3.4vw;
+          }
+
+          .intro.has-qr .content .qr-container {
+            display: none;
+          }
+        }
       `}</style>
       <style jsx global>{`
         .intro .content .action span strong {
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 400;
           font-size: clamp(1.25661vw, 1.25661vw, 38.63px);
           line-height: 128%;
           color: #fdbab2;
         }
-
 
         @media screen and (max-width: 992px) {
           .intro .content .action span strong {
@@ -475,15 +459,13 @@ export default function Home() {
           }
         }
 
-
-        @media screen AND (min-width: 526px) AND (max-width: 992px) { 
+        @media screen AND (min-width: 526px) AND (max-width: 992px) {
           .intro .content .action span strong {
             font-size: 20px;
           }
         }
 
-
-        @media screen AND (min-width: 1921px) { 
+        @media screen AND (min-width: 1921px) {
           .intro .content .action span strong {
             font-size: 1vw;
           }

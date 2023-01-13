@@ -1,17 +1,19 @@
-import React from 'react';
+import React from "react";
 
 type SectionTitleProps = {
-  children:any,
-  centered?:boolean
+  children: any;
+  centered?: boolean;
 };
-function SectionTitle(props:SectionTitleProps){
-  let className = '';
-  if(props.centered){
-    className += ' center';
+function SectionTitle(props: SectionTitleProps) {
+  let className = "";
+  if (props.centered) {
+    className += " center";
   }
-  return <>
-    <h2 className={className}>{props.children}</h2>
-    <style jsx>{`
+  return (
+    <>
+      <h2 className={className}>{props.children}</h2>
+      <style jsx>
+        {`
       h2 {
           font-family: Visby,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
           font-style: normal;
@@ -32,8 +34,9 @@ function SectionTitle(props:SectionTitleProps){
           font-weight: 700;
       }  
     `}
-    </style>
-  </>
+      </style>
+    </>
+  );
 }
 
 export default SectionTitle;

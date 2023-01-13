@@ -3,22 +3,15 @@ import { useState } from "react";
 export default function Expertise() {
   const [texts] = useState({
     title: `<strong>Expertise,</strong> what i worked on before.`,
-    subtitle:
-      `I have worked on bunch of projects and technologies but these are the topics i am most skilled at.`,
-      item1Title:
-      `Mobile Development`,
-      item2Title:
-      `Front-End Development`,
-      item3Title:
-      `Smart Contract Newbie`,
-    item1:
-      `Worked on mobile development with Flutter framework and dart programming language.`,
-    item2:
-      `Created beautiful UI for both mobile and web, mostly used React framework along with HTML-CSS.`,
-    item3:
-      `Even though this is an expertise page, i am passionate about the blockchain and smart contracts. Hopefully i will be deleting the Newbie tag from the title soon.`,
+    subtitle: `I have worked on bunch of projects and technologies but these are the topics i am most skilled at.`,
+    item1Title: `Mobile Development`,
+    item2Title: `Front-End Development`,
+    item3Title: `Smart Contract Newbie`,
+    item1: `Worked on mobile development with Flutter framework and dart programming language.`,
+    item2: `Created beautiful UI for both mobile and web, mostly used React framework along with HTML-CSS.`,
+    item3: `Even though this is an expertise page, i am passionate about the blockchain and smart contracts. Hopefully i will be deleting the Newbie tag from the title soon.`,
   });
-  
+
   return (
     <>
       <section id="section2">
@@ -27,23 +20,24 @@ export default function Expertise() {
             className="animation-element"
             dangerouslySetInnerHTML={{ __html: texts.title }}
           ></h2>
-          <p className="animation-element" dangerouslySetInnerHTML={{ __html: texts.subtitle }}></p>
+          <p
+            className="animation-element"
+            dangerouslySetInnerHTML={{ __html: texts.subtitle }}
+          ></p>
 
           <ul>
             <li className="animation-element">
-              <img src="/icon/home.png"/>
+              <img src="/icon/home.png" />
               <h4>{texts.item1Title}</h4>
               <span>{texts.item1}</span>
             </li>
             <li className="animation-element">
-              <img src="/icon/user.png"/>
+              <img src="/icon/user.png" />
               <h4>{texts.item2Title}</h4>
               <span>{texts.item2}</span>
             </li>
             <li className="animation-element">
-              <img
-                src="/icon/sack-dollar.png"
-              />
+              <img src="/icon/sack-dollar.png" />
               <h4>{texts.item3Title}</h4>
               <span>{texts.item3}</span>
             </li>
@@ -57,7 +51,6 @@ export default function Expertise() {
           flex-direction: row;
           padding: 4vw 5.103vw 2vw 10.317vw;
           z-index: 10;
-
         }
 
         section .media {
@@ -78,9 +71,8 @@ export default function Expertise() {
 
         section .content h2 {
           opacity: 0;
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: 3.43391vw;
@@ -92,9 +84,8 @@ export default function Expertise() {
 
         section .content p {
           opacity: 0;
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: 1.5873vw;
@@ -150,9 +141,8 @@ export default function Expertise() {
         }
 
         section .content ul span {
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: 1.32275vw;
@@ -229,14 +219,13 @@ export default function Expertise() {
             font-size: 15px;
             line-height: 20px;
           }
-
         }
 
         @media screen AND (max-width: 526px) {
-            section .content ul li img {
-                width: 6vw;
-                height: 4.5vw;
-            }
+          section .content ul li img {
+            width: 6vw;
+            height: 4.5vw;
+          }
         }
 
         @media screen AND (min-width: 526px) AND (max-width: 992px) {
@@ -253,7 +242,7 @@ export default function Expertise() {
             font-size: 20px;
             line-height: 30px;
           }
-          
+
           section .content ul li img {
             width: 4vw;
             height: 3.5vw;
