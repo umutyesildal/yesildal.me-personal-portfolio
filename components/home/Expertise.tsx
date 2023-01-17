@@ -1,8 +1,19 @@
 import { useState } from "react";
 
+/**
+ *
+ * Expertise component. Here you can explain your expertises.
+ *
+ * @param {String} title - Title of the component.
+ * @param {String} subtitle - Subtitle of the component.
+ * @param {String} itemTitle - The title of the item.
+ * @param {String} item - Content of the item.
+ *
+ */
+
 export default function Expertise() {
   const [texts] = useState({
-    title: `<strong>Expertise,</strong> what i worked on before.`,
+    title: `<strong>Expertise,</strong> what I worked on before.`,
     subtitle: `I have worked on bunch of projects and technologies but these are the topics i am most skilled at.`,
     item1Title: `Mobile Development`,
     item2Title: `Front-End Development`,

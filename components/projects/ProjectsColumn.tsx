@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 
-type ProjectsItemProps = {};
-function ProjectsColumn(props: ProjectsItemProps) {
+/**
+ *
+ * Projects Column from the Work section. Only for mobile
+ *
+ * @param {Array} projects - All the projects person has done. It has 6 attributes: backgroundColor for background color of the bubble. Type for type of the projects. Title and subtitle of the project. Techs the technologies projects has used. Links is a json with 2 attributes github and website.
+ * 
+ *
+ */
+function ProjectsColumn() {
   const [texts] = useState({
-    assets: [
+    projects: [
       {
         backgroundColor: `#dfe6e940`,
         type: `Mobile App`,
@@ -56,10 +63,11 @@ function ProjectsColumn(props: ProjectsItemProps) {
     ],
   });
 
+  /// Returns the items from the projects array.
   return (
     <>
       <div className="column">
-        {texts.assets.map((item, i) => {
+        {texts.projects.map((item, i) => {
           return (
             <div
               className="item"

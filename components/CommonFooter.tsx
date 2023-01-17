@@ -1,3 +1,11 @@
+/**
+ *
+ * Footer
+ *
+ * @param {String} text - Footer text
+ *
+ */
+
 export default function CommonFooter() {
   return (
     <>

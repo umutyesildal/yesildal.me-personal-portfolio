@@ -3,6 +3,18 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import React, { useRef, useEffect, useState } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
+/**
+ *
+ * Work page only for desktop. In this page i used gsap, scrolltrigger and it is not really optimal to use gsap and react. It is 5 different pages with static texts.
+ *
+ * @param {String} title - Title of the component.
+ * @param {String} subtitle - Subtitle of component.
+ * @param {String} itemTitle - Title of the item.
+ * @param {String} itemSubtitle - Subtitle of the item.
+ * @param {String} itemLink - A link for the item.
+ *
+ */
+
 export default function WorkDesktop() {
   const [texts] = useState({
     title: `<strong>Work,</strong> my previous projects.`,

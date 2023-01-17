@@ -1,9 +1,20 @@
 import { useState } from "react";
 
+
+/**
+ *
+ * Contact component. Here you can explain your Contact status.
+ *
+ * @param {String} title - Title of the component.
+ * @param {String} subtitle - Subtitle of the component.
+ *
+ */
+
 export default function Contact() {
   const [texts] = useState({
     title: `<strong>Get in touch</strong> with me.`,
-    subtitle: `While I am not currently seeking new job opportunities, my inbox is always open for communication. Whether you have a question or simply want to say hello, I will do my best to respond to you asap.`,
+    subtitle: `Whether you have a question or simply want to say hello, I will do my best to respond to you asap.<br/><br/> "You miss 100% of the shots you don't take. - Wayne Gretzky" by Michael Scott
+    `,
   });
 
   return (

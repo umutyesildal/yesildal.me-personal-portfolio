@@ -2,6 +2,13 @@ import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import { Link } from "react-scroll";
 
+
+/**
+ *
+ * Navigation for Desktop. It is static. Every <Link> component requires a string and a section id.
+ *
+ */
+
 export default function Navigation({
   isSticky = false,
   isDimmed = false,

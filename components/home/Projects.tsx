@@ -1,9 +1,21 @@
 import ProjectsColumn from "components/projects/ProjectsColumn";
 import { useState } from "react";
+
+
+/**
+ *
+ * Projects section, only for mobile
+ *
+ * @param {String} title - Title of the component.
+ * @param {String} subtitle - Subtitle of the component.
+ *
+ */
+
+
 export default function Projects() {
   const [texts] = useState({
     title: `<strong>Work,</strong> my previous projects.`,
-    subtitle: "Here are the projects that i have worked on before.",
+    subtitle: "Here are the projects that I have worked on before.",
   });
 
   return (

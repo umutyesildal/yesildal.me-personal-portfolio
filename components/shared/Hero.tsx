@@ -1,3 +1,15 @@
+
+/**
+ *
+ * Shared Hero Component of the website
+ *
+ * @param {String} title - Title of the hero component.
+ * @param {String} subtitle - Subtitle of the hero component.
+ * @param {String} background - Background image of the hero component.
+ * @param {String} backgroundStyle - The style of Background of the hero component.
+ *
+ */
+
 export default function Hero(props) {
   const title = props.title;
   const subtitle = props.subtitle;

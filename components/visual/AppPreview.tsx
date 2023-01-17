@@ -1,3 +1,12 @@
+
+/**
+ *
+ * Image Preview component, this component is used at the very first page. Because there is only one image at the whole page, image is static, but you can always change it.
+ *
+ * @param {String} image - Image shown in the preview.
+ *
+ */
+
 export default function ImagePreview() {
   return (
     <>

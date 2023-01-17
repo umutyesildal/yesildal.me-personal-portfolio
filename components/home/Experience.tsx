@@ -1,10 +1,19 @@
 import SimpleAccordion from "components/shared/Accordion";
 import { useState } from "react";
 
+/**
+ *
+ * Expertise component. Here you can explain your Experiences.
+ *
+ * @param {String} title - Title of the component.
+ * @param {String} subtitle - Subtitle of the component.
+ *
+ */
+
 export default function Experience() {
   const [texts] = useState({
-    title: `<strong>Experience,</strong> where i worked before`,
-    subtitle: `What i have done before, where i worked before and which position i was before`,
+    title: `<strong>Experience,</strong> where I worked before`,
+    subtitle: `What i have done before, where I worked before and which position i was before`,
   });
 
   return (

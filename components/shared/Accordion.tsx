@@ -62,6 +62,7 @@ export default function SimpleAccordion() {
                   sx={{
                     color: "#2d3436",
                     fontSize: "20px",
+                    fontWeight: "500",
                     lineHeight: "122%",
                     fontFamily: "Visby",
                   }}
@@ -73,7 +74,7 @@ export default function SimpleAccordion() {
                 <Typography
                   sx={{
                     color: "#2d3436",
-                    fontSize: "20px",
+                    fontSize: "16px",
                     lineHeight: "122%",
                     fontFamily: "Visby",
                   }}
