@@ -1,8 +1,13 @@
-import { useEffect, useState, useRef} from "react";
+import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
-import { downloadApp } from "../utils/pageUtils";
-import LanguageLink from "./shared/LanguageLink";
 import { Link } from "react-scroll";
+
+
+/**
+ *
+ * Navigation for Desktop. It is static. Every <Link> component requires a string and a section id.
+ *
+ */
 
 export default function Navigation({
   isSticky = false,
@@ -11,8 +16,7 @@ export default function Navigation({
   isDark = false,
   currentPage = {},
 }) {
-
-  const security = 'Security';
+  const security = "Security";
   const [state, setState] = useState({
     isActive: false,
     isSticky: isSticky,
@@ -54,8 +58,9 @@ export default function Navigation({
     if (isActionable) {
       window.onscroll = function () {
         const introElem = document.querySelector(".intro");
-        if(introElem){
-          offsetHeight = document.querySelector<HTMLDivElement>(".intro")?.offsetHeight;
+        if (introElem) {
+          offsetHeight =
+            document.querySelector<HTMLDivElement>(".intro")?.offsetHeight;
         }
         handleNavigationBackground();
         setState((state) => ({ ...state, isActive: false }));
@@ -63,49 +68,46 @@ export default function Navigation({
       };
     }
   }
-/// TODO: change Home Logo
   return (
     <>
       <nav
         className={`${state.isSticky ? "sticky" : ""} ${
           state.isDimmed ? "dim" : ""
-        } ${
-          isDark ? "dark-style" : ""
-        }`}
+        } ${isDark ? "dark-style" : ""}`}
       >
         <a className="home-logo" href="/">
-          {
-            !isDark ? <img className="white" src="/icon.png" alt="logo" />
-            : <img className="white" src="/icon.png" alt="logo" />
-          }
+          {!isDark ? (
+            <img className="white" src="/icon.png" alt="logo" />
+          ) : (
+            <img className="white" src="/icon.png" alt="logo" />
+          )}
           <img className="colored" src="/icon.png" alt="logo colored" />
         </a>
-     
-        <ul className="menu" >
-          
+
+        <ul className="menu">
           <li className="secondary">
-          <Link activeClass="active" smooth spy to="home">
-                home
-              </Link>
-          </li>
-          <li className="secondary">
-          <Link activeClass="active" smooth spy to="expertise">
-                expertise
+            <Link activeClass="active" smooth spy to="home">
+              home
             </Link>
           </li>
           <li className="secondary">
-          <Link activeClass="active" smooth spy to="work">
-                work
+            <Link activeClass="active" smooth spy to="expertise">
+              expertise
             </Link>
           </li>
           <li className="secondary">
-          <Link activeClass="active" smooth spy to="experience">
-                experience
+            <Link activeClass="active" smooth spy to="work">
+              work
             </Link>
           </li>
           <li className="secondary">
-          <Link activeClass="active" smooth spy to="contact">
-                contact
+            <Link activeClass="active" smooth spy to="experience">
+              experience
+            </Link>
+          </li>
+          <li className="secondary">
+            <Link activeClass="active" smooth spy to="contact">
+              contact
             </Link>
           </li>
         </ul>
@@ -115,51 +117,50 @@ export default function Navigation({
             aria-label="menu button"
             className="menu-button"
           ></button>
-        <ul >
-          <li className="secondary">
-          <Link activeClass="active" smooth spy to="home">
+          <ul>
+            <li className="secondary">
+              <Link activeClass="active" smooth spy to="home">
                 home
               </Link>
-          </li>
-          <li className="secondary">
-          <Link activeClass="active" smooth spy to="expertise">
+            </li>
+            <li className="secondary">
+              <Link activeClass="active" smooth spy to="expertise">
                 expertise
-            </Link>
-          </li>
-          <li className="secondary">
-          <Link activeClass="active" smooth spy to="work">
+              </Link>
+            </li>
+            <li className="secondary">
+              <Link activeClass="active" smooth spy to="work">
                 work
-            </Link>
-          </li>
-          <li className="secondary">
-          <Link activeClass="active" smooth spy to="experience">
+              </Link>
+            </li>
+            <li className="secondary">
+              <Link activeClass="active" smooth spy to="experience">
                 experience
-            </Link>
-          </li>
-          <li className="secondary">
-          <Link activeClass="active" smooth spy to="contact">
+              </Link>
+            </li>
+            <li className="secondary">
+              <Link activeClass="active" smooth spy to="contact">
                 contact
-            </Link>
-          </li>
-        </ul>
+              </Link>
+            </li>
+          </ul>
         </div>
       </nav>
       <style jsx global>{`
-
         .language-selector {
-            display: none;
-            color: #9cb6c1;
-            background: transparent;
-            font-size: .9vw;
-            cursor: pointer;
-            font-weight: 400;
-            margin: 5px;
-            padding: 3px;
-            box-sizing: border-box;
-            box-shadow: 0 1px 0 1px rgb(0 0 0 / 4%);
-            border: none;
-            text-align: center;
-            outline: 0px;
+          display: none;
+          color: #9cb6c1;
+          background: transparent;
+          font-size: 0.9vw;
+          cursor: pointer;
+          font-weight: 400;
+          margin: 5px;
+          padding: 3px;
+          box-sizing: border-box;
+          box-shadow: 0 1px 0 1px rgb(0 0 0 / 4%);
+          border: none;
+          text-align: center;
+          outline: 0px;
         }
 
         nav {
@@ -188,7 +189,7 @@ export default function Navigation({
           box-shadow: 0px 1px 6px #0000000a;
         }
 
-        nav .home-logo{
+        nav .home-logo {
           display: flex;
           align-items: center;
         }
@@ -201,12 +202,13 @@ export default function Navigation({
           display: flex;
         }
 
-        nav.sticky.dim ul li.secondary a, nav.sticky.dim ul li.primary p {
+        nav.sticky.dim ul li.secondary a,
+        nav.sticky.dim ul li.primary p {
           color: #2d3436;
         }
 
         nav .mobile-menu ul li p {
-            font-size: 14px;
+          font-size: 14px;
         }
 
         nav ul li.secondary.language-select {
@@ -215,17 +217,16 @@ export default function Navigation({
         nav ul li.secondary.language-select button {
           border: none;
           background: none;
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
-          font-size: .9vw;
+          font-size: 0.9vw;
           line-height: 128%;
           color: rgba(255, 255, 255, 0.7);
           transition: 0.15s all;
           cursor: pointer;
-          font-size: min(1.4vw,13pt);
+          font-size: min(1.4vw, 13pt);
         }
         nav.sticky.dim ul li.secondary.language-select button,
         nav ul li.secondary.language-select button:hover {
@@ -236,14 +237,14 @@ export default function Navigation({
           opacity: 0;
           pointer-events: none;
           background: white;
-          border-radius: .9vw;
+          border-radius: 0.9vw;
           top: 1.8vw;
           left: 50%;
           transform: translateX(-50%) scale(0.5);
           transition: 0.15s all;
           box-shadow: 0 3px 12px #2d343622;
         }
-        nav ul li.secondary.language-select div[data-open=true] {
+        nav ul li.secondary.language-select div[data-open="true"] {
           position: absolute;
           opacity: 1;
           pointer-events: all;
@@ -260,25 +261,24 @@ export default function Navigation({
         }
         nav ul li.secondary.language-select div ul li {
           padding: 0;
-          margin: .4vw 0 .4vw;
+          margin: 0.4vw 0 0.4vw;
           width: 100%;
           display: flex;
           justify-content: center;
         }
 
         nav ul li.secondary.language-select div ul li button {
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           cursor: pointer;
           font-style: normal;
           font-weight: 300;
           font-size: min(1.2vw, 11pt);
           line-height: 128%;
-          color: rgba(0,0,0,.5);
+          color: rgba(0, 0, 0, 0.5);
           text-decoration: none;
-          -webkit-transition: .15s all;
-          transition: .15s all;
+          -webkit-transition: 0.15s all;
+          transition: 0.15s all;
           text-transform: capitalize;
           padding: 0.5vw 2vw;
         }
@@ -311,10 +311,10 @@ export default function Navigation({
           display: flex;
         }
 
-        nav ul li.secondary a, nav ul li.primary p {
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+        nav ul li.secondary a,
+        nav ul li.primary p {
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           line-height: 128%;
@@ -322,16 +322,16 @@ export default function Navigation({
           text-decoration: none;
           transition: 0.3s ease-in all;
           font-size: min(1.4vw, 13pt);
-
         }
 
         nav ul li.primary p {
-            font-weight: 500;
-            color: white;
-            letter-spacing: 0.25px;
+          font-weight: 500;
+          color: white;
+          letter-spacing: 0.25px;
         }
 
-        nav ul li.secondary a:hover, nav ul li.primary p:hover {
+        nav ul li.secondary a:hover,
+        nav ul li.primary p:hover {
           color: var(--title-color);
         }
 
@@ -361,10 +361,10 @@ export default function Navigation({
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: min(1.2vw,11pt);
+          font-size: min(1.2vw, 11pt);
         }
 
-        nav ul li div ul li button p{
+        nav ul li div ul li button p {
           color: #2d3436;
         }
 
@@ -440,8 +440,8 @@ export default function Navigation({
             background: #ffffff66;
           }
 
-          nav .mobile-menu.opened .filler{
-              flex: 1;
+          nav .mobile-menu.opened .filler {
+            flex: 1;
           }
 
           nav .mobile-menu button.menu-button {
@@ -563,9 +563,9 @@ export default function Navigation({
           nav .mobile-menu ul li.secondary.language-select select {
             border: none;
             background: none;
-            font-family: Visby, -apple-system, BlinkMacSystemFont,
-                "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-                "Segoe UI Emoji";
+            font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+              Helvetica, Arial, sans-serif, "Apple Color Emoji",
+              "Segoe UI Emoji";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -600,23 +600,22 @@ export default function Navigation({
           backdrop-filter: none;
         }
 
-        nav.dark-style ul li a, nav.dark-style ul li.secondary.language-select button, 
-        nav.dark-style ul li.secondary a, nav.dark-style ul li.secondary a,
-        nav.dark-style ul li.primary button p
-        {
+        nav.dark-style ul li a,
+        nav.dark-style ul li.secondary.language-select button,
+        nav.dark-style ul li.secondary a,
+        nav.dark-style ul li.secondary a,
+        nav.dark-style ul li.primary button p {
           color: #2d3436;
         }
 
-        nav.dark-style.sticky ul li.primary button p{
+        nav.dark-style.sticky ul li.primary button p {
           color: var(--title-color);
         }
-
-        
 
         nav.dark-style .mobile-menu.opened {
           background: transparent;
         }
-        
+
         nav.dark-style .mobile-menu .menu-button {
           /** this !important is to overcome the absolutely terrible code written by the
           previous contractor. i HATE this practice but given time constraints this is the
@@ -646,8 +645,6 @@ export default function Navigation({
             background: none;
           }
         }
-
-        
       `}</style>
 
       <style jsx global>{`

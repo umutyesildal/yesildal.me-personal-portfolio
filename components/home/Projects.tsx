@@ -1,32 +1,41 @@
 import ProjectsColumn from "components/projects/ProjectsColumn";
 import { useState } from "react";
+
+
+/**
+ *
+ * Projects section, only for mobile
+ *
+ * @param {String} title - Title of the component.
+ * @param {String} subtitle - Subtitle of the component.
+ *
+ */
+
+
 export default function Projects() {
   const [texts] = useState({
     title: `<strong>Work,</strong> my previous projects.`,
-    subtitle: 'Here are the projects that i have worked on before.'
+    subtitle: "Here are the projects that I have worked on before.",
   });
 
   return (
     <>
       <section id="section">
-      <div className="heading">
-            <h2
-              dangerouslySetInnerHTML={{ __html: texts.title }}
-            ></h2>
-            <p dangerouslySetInnerHTML={{ __html: texts.subtitle }}></p>
-          </div>
-      <div className="projects-column">
-          <ProjectsColumn/>
-      </div>
+        <div className="heading">
+          <h2 dangerouslySetInnerHTML={{ __html: texts.title }}></h2>
+          <p dangerouslySetInnerHTML={{ __html: texts.subtitle }}></p>
+        </div>
+        <div className="projects-column">
+          <ProjectsColumn />
+        </div>
       </section>
       <style jsx>{`
         section {
           padding: 35px 22px;
         }
         section .heading h2 {
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: 3.43391vw;
@@ -38,9 +47,8 @@ export default function Projects() {
         }
 
         section .heading p {
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: 15px;
@@ -50,8 +58,8 @@ export default function Projects() {
           margin-right: 5vw;
         }
 
-        section projects-column{
-          padding: 
+        section projects-column {
+          padding: ;
         }
         @media screen and (max-width: 992px) {
           section .heading h2 {

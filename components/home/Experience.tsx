@@ -1,23 +1,29 @@
 import SimpleAccordion from "components/shared/Accordion";
 import { useState } from "react";
 
+/**
+ *
+ * Expertise component. Here you can explain your Experiences.
+ *
+ * @param {String} title - Title of the component.
+ * @param {String} subtitle - Subtitle of the component.
+ *
+ */
+
 export default function Experience() {
   const [texts] = useState({
-    title: `<strong>Experience,</strong> where i worked before`,
-    subtitle:
-      `What i have done before, where i worked before and which position i was before`,
+    title: `<strong>Experience,</strong> where I worked before`,
+    subtitle: `What i have done before, where I worked before and which position i was before`,
   });
-  
+
   return (
     <>
       <section id="section2">
         <div className="content">
-          <h2
-            dangerouslySetInnerHTML={{ __html: texts.title }}
-          ></h2>
+          <h2 dangerouslySetInnerHTML={{ __html: texts.title }}></h2>
           <p dangerouslySetInnerHTML={{ __html: texts.subtitle }}></p>
-          <div className="accordion" >
-          <SimpleAccordion/>
+          <div className="accordion">
+            <SimpleAccordion />
           </div>
         </div>
       </section>
@@ -28,7 +34,6 @@ export default function Experience() {
           flex-direction: column;
           padding: 4vw 5.103vw 2vw 10.317vw;
           background-color: #bae374;
-
         }
 
         section .media {
@@ -42,14 +47,13 @@ export default function Experience() {
           display: flex;
           flex-direction: column;
         }
-        section .accordion{
+        section .accordion {
           width: 100%;
         }
 
         section .content h2 {
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: 3.43391vw;
@@ -60,9 +64,8 @@ export default function Experience() {
         }
 
         section .content p {
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: 1.5873vw;
@@ -118,9 +121,8 @@ export default function Experience() {
         }
 
         section .content ul span {
-          font-family: Visby, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji";
+          font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
           font-weight: 300;
           font-size: 1.32275vw;
@@ -190,10 +192,10 @@ export default function Experience() {
         }
 
         @media screen AND (max-width: 526px) {
-            section .content ul li img {
-                width: 6vw;
-                height: 4.5vw;
-            }
+          section .content ul li img {
+            width: 6vw;
+            height: 4.5vw;
+          }
         }
 
         @media screen AND (min-width: 526px) AND (max-width: 992px) {
@@ -210,7 +212,7 @@ export default function Experience() {
             font-size: 20px;
             line-height: 30px;
           }
-          
+
           section .content ul li img {
             width: 4vw;
             height: 3.5vw;
