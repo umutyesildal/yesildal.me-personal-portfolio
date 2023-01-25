@@ -24,7 +24,7 @@ export default function Index() {
       "description": "Portfolio website of Umut Yunus Yeşildal",
       "alternateName": "yesildal.me",
       "logo": "https://yesildal.me/favicon.ico",
-      "image": "https://www.yesildal.me/homeImage2.png",
+      "image": "https://www.yesildal.me/homeImage.png",
       "founder": [
         {
             "@type": "Person",
@@ -50,12 +50,12 @@ export default function Index() {
         "@type": "WebPage",
         "url": "https://yesildal.me",
         "name": "Umut Yeşildal",
-        "image": "https://www.yesildal.me/homeImage2.png",
+        "image": "https://www.yesildal.me/homeImage.png",
         "description": "Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Istanbul, meet Umut Yunus Yeşildal",
         "mainEntityOfPage": {
             "@type": "Organization",
             "name": "Umut Yeşildal",
-            "image": "https://www.yesildal.me/homeImage2.png",
+            "image": "https://www.yesildal.me/homeImage.png",
             "description": "Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Istanbul, meet Umut Yunus Yeşildal",
             "url": "https://yesildal.me",
         }
