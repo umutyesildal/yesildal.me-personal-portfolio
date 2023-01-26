@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'Visby';
+  src: url(/fonts/VisbyLight.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Visby';
+  src: url(/fonts/VisbyRegular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Visby';
+  src: url(/fonts/VisbyMedium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Visby';
+  src: url(/fonts/VisbyBold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --theme-color: #2d3436;
+    --light-background-color: #ECF6F8;
+    --title-color: rgb(254 105 111);
+    --light-alternate-color: #FFF4F2;
+}
+
+/* wide-gamut P3 support */
+@supports (color: color(display-p3 1 1 1)) {
+  :root {
+      --title-color: color(display-p3 0.996 0.411 0.425);
+      --theme-color: color(display-p3 0.137 0.301 0.388);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.95) translateY(-5%);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpFadeIn {
+  from {
+    transform: translateY(1.32275vw);
+    opacity: 0.2;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleInFadeIn {
+  from {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes onlyfadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes intro {
+  from {
+    height: 100vh;
+    border-radius: 0 0 0 0;
+  }
+
+  to {
+    border-radius: 0px 0px 52px 394px;
+    height: 95vh;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-style: normal;
+  font-weight: normal;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  /* scroll-snap-type: y proximity; DO NOT ENABLE THIS, IT MESSES UP CHROME. having it on body is OK though. */ 
+}
+
+body {
+  font-family: sans-serif;
+  font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-style: normal;
+  font-weight: normal;
+  scroll-snap-type: y proximity;
+}
+
+.scroll-snap-y {
+  scroll-snap-type: y mandatory;
+}
+
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  cursor: pointer;
+  color: var(--theme-color);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.mobile {
+  display: none;
+}
+
+
+.primary-button {
+  background: #0abde3;
+  background: color(display-p3 0.549 0.929 0.996);
+  box-shadow: 0px 0.26455vw 0.26455vw rgba(140, 237, 254, 0.25);
+  border: none;
+  border-radius: 2.24867vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 1.05820vw;
+  font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.32275vw;
+  line-height: 1.71195vw;
+  display: flex;
+  align-items: center;
+  height: 2.77777vw;
+  color: var(--theme-color);
+  text-decoration: none;
+  transition: 0.3s ease-out all;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background: hsl(189deg 100% 55%);
+  box-shadow: 0px 0.06613vw 0.52910vw rgb(140 237 254 / 45%);
+}
+
+.fade-in .animation-element {
+  animation: fadeIn 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+.vlns .vl-modal{
+  background: #293a45a8;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  html,
+  body {
+    width: 100%;
+  }
+  .primary-button {
+    min-height: 34px;
+    border-radius: 18.8637px;
+    /* font-size: 11.5682px; */
+    line-height: 21px;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  nav {
+    padding: 21px 23px;
+    margin-bottom: -70px;
+  }
+
+  nav.sticky {
+    padding: 21px 23px;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  nav.sticky.dim {
+    padding: 21px 23px;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }  
+
+  nav.sticky .mobile-menu {
+    transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  
+  nav > img {
+    width: 196px;
+    position: relative;
+    z-index: 2;
+  }
+
+  nav > img, nav.sticky > img, nav.sticky.dim > img.colored {
+    display: flex;
+  }
+
+  nav > img.colored, nav.sticky > img.colored, nav.sticky.dim > img {
+    display: none;
+  }
+
+  nav .menu {
+    display: none;
+  }
+
+  nav .mobile-menu {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    padding-top: 70px;
+    left: 0;
+    top: 0;
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+    transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  nav .mobile-menu.opened {
+    padding: 107px 0 86px 0;
+    background: hsl(0deg 0% 100% / 15%);
+  }
+
+  nav .mobile-menu button {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    min-height: 32px;
+    min-width: 32px;
+    right: 16px;
+    top: 16px;
+    position: absolute;
+    border: none;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: rotate(0deg);
+  }
+
+  nav .mobile-menu.closed button {
+    background-size: 24px 16px;
+    background-image: url("/menu_icon.png");
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s rotateLeft;
+  }
+
+  nav.sticky.dim .mobile-menu.closed button {
+    background-image: url("/menu_icon_dim.png");
+  }
+
+  nav .mobile-menu ul {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav .mobile-menu.opened ul {
+    opacity: 1;
+    position: relative;
+    pointer-events: all;
+  }
+
+  nav .mobile-menu ul li.secondary {
+    margin-right: 0;
+    margin-bottom: 20px;
+    border: 2px solid #b4b4be;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 16px;
+    padding: 7px 2px;
+    width: 205px;
+    text-align: center;
+  }
+
+
+}
+
+.arrow-button::after {
+  content: '→';
+  margin-left: 0.4vw;
+}
+
+
+@media screen AND (min-width: 1921px) {
+  .primary-button {
+    font-size: 1vw;
+    height: 2.213vw;
+  }
+}
