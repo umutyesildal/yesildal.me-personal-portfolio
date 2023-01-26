@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import React, { useRef, useEffect, useState } from "react";
+import ProjectsDesktopPanel from "./ProjectsDesktopPanel";
 gsap.registerPlugin(ScrollTrigger);
 
 /**
@@ -15,7 +16,54 @@ gsap.registerPlugin(ScrollTrigger);
  *
  */
 
-export default function WorkDesktop() {
+export default function ProjectsDesktop() {
+  const projects = [
+    {
+      title:"<strong>Danceflavors</strong> Mobile App",
+      subtitle:`Worked on Danceflavors app for a year, created frontend for the
+        app, took a part in designing and implementing the architecture
+        of the backend. Mainly used Flutter and Dart programming
+        language, Hive and SQFLite for database, BLoC for state
+        management.`,
+      buttonLink:"https://www.danceflavors.com/",
+      buttonTitle:"Website",
+      imageLink:"/work/danceflavors_app.png"
+    },
+    {
+      title:"<strong>Danceflavors</strong> Mobile App",
+      subtitle:`Worked on Danceflavors app for a year, created frontend for the
+        app, took a part in designing and implementing the architecture
+        of the backend. Mainly used Flutter and Dart programming
+        language, Hive and SQFLite for database, BLoC for state
+        management.`,
+      buttonLink:"https://www.danceflavors.com/",
+      buttonTitle:"Website",
+      imageLink:"/work/danceflavors_app.png"
+    },
+    {
+      title:"<strong>Danceflavors</strong> Mobile App",
+      subtitle:`Worked on Danceflavors app for a year, created frontend for the
+        app, took a part in designing and implementing the architecture
+        of the backend. Mainly used Flutter and Dart programming
+        language, Hive and SQFLite for database, BLoC for state
+        management.`,
+      buttonLink:"https://www.danceflavors.com/",
+      buttonTitle:"Website",
+      imageLink:"/work/danceflavors_app.png"
+    },
+    {
+      title:"<strong>Danceflavors</strong> Mobile App",
+      subtitle:`Worked on Danceflavors app for a year, created frontend for the
+        app, took a part in designing and implementing the architecture
+        of the backend. Mainly used Flutter and Dart programming
+        language, Hive and SQFLite for database, BLoC for state
+        management.`,
+      buttonLink:"https://www.danceflavors.com/",
+      buttonTitle:"Website",
+      imageLink:"/work/danceflavors_app.png"
+    },
+  ];
+
   const [texts] = useState({
     title: `<strong>Work,</strong> my previous projects.`,
     subtitle: "Here are the projects that i have worked on before.",
@@ -61,38 +109,17 @@ export default function WorkDesktop() {
             </div>
           </div>
           <section className="panel red" ref={(e) => createPanelsRefs(e, 1)}>
-            <div className="content">
-              <h1
-                style={{
-                  width: "clamp(32vw, 32vw, 991.92px)",
-                  textAlign: "left",
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: `<strong>Danceflavors</strong> Mobile App`,
-                }}
-              ></h1>
-              <p
-                style={{
-                  width: "clamp(32vw, 32vw, 890.43px)",
-                  textAlign: "left",
-                }}
-              >
-                Worked on Danceflavors app for a year, created frontend for the
+            <ProjectsDesktopPanel
+              title="<strong>Danceflavors</strong> Mobile App"
+              subtitle={`Worked on Danceflavors app for a year, created frontend for the
                 app, took a part in designing and implementing the architecture
                 of the backend. Mainly used Flutter and Dart programming
                 language, Hive and SQFLite for database, BLoC for state
-                management.
-              </p>
-              <div className="box">
-                <a href="https://www.danceflavors.com/">
-                  {" "}
-                  <button>
-                    <span>Website </span>
-                  </button>
-                </a>
-              </div>
-            </div>
-            <img src="/work/danceflavors_app.png" alt="DanceFlavors App" />
+                management.`}
+              buttonLink={"https://www.danceflavors.com/"}
+              buttonTitle={"Website"}
+              imageLink={"/work/danceflavors_app.png"}
+            />
           </section>
           <section className="panel orange" ref={(e) => createPanelsRefs(e, 2)}>
             <div className="content">

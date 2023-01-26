@@ -8,7 +8,7 @@ import React, { useState } from "react";
  * 
  *
  */
-function ProjectsColumn() {
+function ProjectsMobileColumn() {
   const [texts] = useState({
     projects: [
       {
@@ -167,4 +167,4 @@ function ProjectsColumn() {
   );
 }
 
-export default ProjectsColumn;
+export default ProjectsMobileColumn;

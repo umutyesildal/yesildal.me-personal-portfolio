@@ -5,14 +5,15 @@ import Expertise from "components/home/Expertise";
 import Navigation from "components/Navigation";
 import Experience from "components/home/Experience";
 import Contact from "components/home/Contact";
-import Work from "components/work/Work";
+import Work from "components/projects/ProjectsDesktop";
 import { BrowserView, MobileView } from "react-device-detect";
-import Projects from "components/home/Projects";
+import ProjectsMobile from "components/projects/ProjectsMobile";
 import Head from "next/head";
 import parse from "html-react-parser";
 
 export default function Index() {
   const [texts] = useState({
+    /// SEO optimization
     title: `Umut Yeşildal`,
     description: ``,
     head: `<script type="application/ld+json">
@@ -128,7 +129,7 @@ export default function Index() {
                 <Work />
               </BrowserView>
               <MobileView>
-                <Projects />
+                <ProjectsMobile />
               </MobileView>
             </section>
             <section id="experience">

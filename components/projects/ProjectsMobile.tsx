@@ -1,4 +1,4 @@
-import ProjectsColumn from "components/projects/ProjectsColumn";
+import ProjectsMobileColumn from "components/projects/ProjectsMobileColumn";
 import { useState } from "react";
 
 
@@ -12,7 +12,7 @@ import { useState } from "react";
  */
 
 
-export default function Projects() {
+export default function ProjectsMobile() {
   const [texts] = useState({
     title: `<strong>Work,</strong> my previous projects.`,
     subtitle: "Here are the projects that I have worked on before.",
@@ -26,7 +26,7 @@ export default function Projects() {
           <p dangerouslySetInnerHTML={{ __html: texts.subtitle }}></p>
         </div>
         <div className="projects-column">
-          <ProjectsColumn />
+          <ProjectsMobileColumn />
         </div>
       </section>
       <style jsx>{`
