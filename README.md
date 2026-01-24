@@ -1,39 +1,30 @@
-# Software Developer Folio
+# Software Developer Portfolio
 
-## A clean, beautiful and responsive portfolio template for Developers!
+A clean, beautiful and responsive portfolio template for developers.
 
 ![Portfolio Website](https://repository-images.githubusercontent.com/577325623/4f220169-ebd3-4aa6-8e9b-b6b0909b5cd2)
 
-Nearly all the components are dynamic and easy to use! Feel free to use it as-is or personalize it as much as you want.
+## Features
 
-If you'd like to **contribute** and make this much better for other users, please do.
+- ✔️ Homepage
+- ✔️ Expertise
+- ✔️ Experience
+- ✔️ Work and Projects
+- ✔️ Contact
 
-
-## Project Covers
-✔️ Homepage\
-✔️ Expertise\
-✔️ Experience\
-✔️ Work and Projects\
-✔️ Contact
-
-To view a live example, **[click here](https://yesildal.me)**.
-
+**[Live Demo →](https://yesildal.me)**
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-The versions i have used in the project.
+### Prerequisites
 
 ```
-node@v16.16.0
-yarn@1.22.17
-git@2.37.3
+node >= 18.x
+npm >= 9.x
+git
 ```
 
-## How To Use 
-
-From your command line and clone.
+### Installation
 
 ```bash
 # Clone this repository
@@ -43,29 +34,31 @@ git clone https://github.com/umutyesildal/yesildal.me-personal-portfolio.git
 cd yesildal.me-personal-portfolio
 
 # Install dependencies
-yarn
+npm install
 
 # Start a local dev server
-yarn dev
+npm run dev
 ```
 
-## Deployment 
+## Deployment
 
-For deployment I have used [vercel](https://vercel.app/) and I am pretty happy with it.
+For deployment I recommend [Vercel](https://vercel.com/):
+
 ```bash
 # Build & Development Settings
-Framework Preset: Nextjs
-Build command: next build
-Output directory: default
-Install command: yarn
-Development command: next
+Framework Preset: Next.js
+Build command: npm run build
+Output directory: .next
+Install command: npm install
 ```
 
+## Technologies
 
+- [Next.js](https://nextjs.org/) - React framework
+- [React](https://reactjs.org/) - UI library
+- [GSAP](https://greensock.com/gsap/) - Animation library
+- [Material UI](https://mui.com/) - Component library
 
+## License
 
-## Technologies Used 
-
-- [React](https://reactjs.org/)
-- [Next](https://nextjs.org/)
-- [gsap](https://greensock.com/gsap/)
+This project is open source and available under the [MIT License](LICENSE).
