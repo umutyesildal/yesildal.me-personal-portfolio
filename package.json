@@ -27,18 +27,16 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "^18.3.1",
     "react-gtm-module": "^2.0.11",
-    "react-lottie": "^1.2.4",
     "react-scroll": "^1.9.0",
     "react-useinterval": "^1.0.2",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1"
   },
   "devDependencies": {
-    "@types/gsap": "^3.0.0",
     "@types/node": "25.0.10",
     "@types/react": "^18.3.18",
     "@types/react-scroll": "^1.8.10",
-    "eslint": "^8.57.1",
+    "eslint": "^9.28.0",
     "eslint-config-next": "^15.3.2",
     "typescript": "^5.7.3"
   }
