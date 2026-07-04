@@ -19,8 +19,8 @@
     "gsap": "^3.12.7",
     "html-react-parser": "^5.2.4",
     "is-mobile": "^4.0.0",
-    "js-cookie": "^3.0.5",
-    "next": "^15.5.10",
+    "js-cookie": "^3.0.8",
+    "next": "^15.5.20",
     "node-html-parser": "^7.0.1",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
@@ -39,5 +39,8 @@
     "eslint": "^9.28.0",
     "eslint-config-next": "^15.3.2",
     "typescript": "^5.7.3"
+  },
+  "overrides": {
+    "postcss": "8.5.16"
   }
 }
