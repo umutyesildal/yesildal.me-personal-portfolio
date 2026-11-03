@@ -14,7 +14,7 @@ export default function Home() {
   const [texts] = useState({
     title: "Umut Yunus Yeşildal",
     subtitle:
-      "I am a Software Developer focused on drifting with the wind of newly developed tech.<br/><br/> Jack of all trades, master of none, but oftentimes better than a master of one.",
+      "I build tools people actually use: job search for Germany, stock baskets on Solana, and a sci-fi deck-builder when the weekend allows.<br/><br/> Based in Berlin, finishing a Master's at Humboldt.",
   });
   return (
     <>

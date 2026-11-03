@@ -14,13 +14,13 @@ import { useState } from "react";
 export default function Expertise() {
   const [texts] = useState({
     title: `<strong>Expertise,</strong> what I worked on before.`,
-    subtitle: `I have worked on bunch of projects and technologies but these are the topics i am most skilled at.`,
-    item1Title: `Mobile Development`,
-    item2Title: `Front-End Development`,
-    item3Title: `Smart Contract Newbie`,
-    item1: `Worked on mobile development with Flutter framework and dart programming language.`,
-    item2: `Created beautiful UI for both mobile and web, mostly used React framework along with HTML-CSS.`,
-    item3: `Even though this is an expertise page, i am passionate about the blockchain and smart contracts. Hopefully i will be deleting the Newbie tag from the title soon.`,
+    subtitle: `I have worked across mobile, web, data and onchain. These are the things I am best at today.`,
+    item1Title: `Product Engineering`,
+    item2Title: `AI Agents`,
+    item3Title: `Solana`,
+    item1: `End to end: Python crawlers, Postgres, Next.js frontends. I ship the boring parts too, including CI, deployment and the cron jobs nobody wants to own.`,
+    item2: `Agent skills, MCP servers and n8n workflows. I build tools that run inside Claude Code, Codex and OpenCode instead of yet another chat window.`,
+    item3: `Anchor programs, Token-2022, xStocks and wallet flows. Basalt, my basket protocol, won the Road to Colosseum Germany ideathon.`,
   });
 
   return (

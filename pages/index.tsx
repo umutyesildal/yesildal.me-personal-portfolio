@@ -30,7 +30,7 @@ export default function Index() {
             "@type": "Person",
             "name": "Umut Yunus Yeşildal",
             "url": "https://twitter.com/umutyyesildal",
-            "jobTitle": "Founder"
+            "jobTitle": "Software Developer"
         }
     ],
       "breadcrumb": {
@@ -51,12 +51,12 @@ export default function Index() {
         "url": "https://yesildal.me",
         "name": "Umut Yeşildal",
         "image": "https://www.yesildal.me/homeImage.png",
-        "description": "Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Istanbul, meet Umut Yunus Yeşildal",
+        "description": "Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Berlin, meet Umut Yunus Yesildal",
         "mainEntityOfPage": {
             "@type": "Organization",
             "name": "Umut Yeşildal",
             "image": "https://www.yesildal.me/homeImage.png",
-            "description": "Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Istanbul, meet Umut Yunus Yeşildal",
+            "description": "Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Berlin, meet Umut Yunus Yesildal",
             "url": "https://yesildal.me",
         }
       },
@@ -71,12 +71,12 @@ export default function Index() {
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Umut Yesildal " />
     <meta property="og:image" content="https://www.yesildal.me/ogImage.png" />
-    <meta property="og:description" content="Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Istanbul, meet Umut Yunus Yeşildal" />
+    <meta property="og:description" content="Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Berlin, meet Umut Yunus Yesildal" />
     <meta property="og:site_name" content="Umut Yesildal" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@umutyyesildal" />
     <meta name="twitter:title" content="Umut Yunus Yeşildal | Software Developer" />
-    <meta name="twitter:description" content="Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Istanbul, meet Umut Yunus Yeşildal" />
+    <meta name="twitter:description" content="Developer devoted to creating great web experiences focused on React, NextJS and Flutter based in Berlin, meet Umut Yunus Yesildal" />
     <meta name="twitter:image" content="https://www.yesildal.me/ogImage.png" />
     <meta name="twitter:creator" content="@umutyyesildal"/>`,
   });
